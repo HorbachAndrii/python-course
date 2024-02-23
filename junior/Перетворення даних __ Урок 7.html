@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Перетворення даних :: Урок 7</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="./Перетворення даних __ Урок 7_files/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Перетворення даних __ Урок 7_files/monokai-sublime.min.css">
+  <link href="./Перетворення даних __ Урок 7_files/css2" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="content">
+    <div class="menu-btn menu-btn--active"></div>
+    <nav id="nav" class="d-flex flex-column flex-shrink-0 p-3 navbar">
+      <ul class="nav_container nav nav-pills flex-column mb-auto">
+        <li><a href="#h-H2_0"
+               class="link_wrap nav-link link-dark link_wrap_H2">&nbsp;</a></li>
+        <li><a href="#h-H3_1"
+               class="link_wrap nav-link link-dark link_wrap_H3">Стартапер</a></li>
+      </ul>
+    </nav>
+    <p class="title">Перетворення даних</p>
+  </div>
+</header>
+<main class="page" style="background-color: #FF9C00">
+  <div class="wrap main-active">
+    <div class="fr-wrapper" data-codelang="py">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    <div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>
+                                              <div>
+                                                <div>
+                                                  <div>
+                                                    <div>
+                                                      <div>
+                                                        <div>
+                                                          <div>
+                                                            <div>
+                                                              <div>
+                                                                <div>
+                                                                  <div>
+                                                                    <div>
+                                                                      <h2 style="text-align: justify;" id="h-H2_0">
+                                                                        &nbsp;</h2>
+                                                                      <h1 style="text-align: center;"><span
+                                                                          style="color: rgb(255, 156, 0);">Перетворення даних</span>
+                                                                      </h1>
+                                                                      <p style="text-align: justify;"><strong>Перетворення
+                                                                        даних — важлива складова програмування, аджедає
+                                                                        змогу проводити операції, недоступні для
+                                                                        конкретного типу даних, а також захищати ці дані
+                                                                        чи перевіряти їх.</strong>&nbsp;</p>
+                                                                      <p style="text-align: justify;">Далеко ходити за
+                                                                        прикладами не доведеться, адже, зрозуміло, що
+                                                                        перетворити рядок на число, чи список на множину
+                                                                        може бути дуже корисно. Ми вже частково зачіпали
+                                                                        цю тему, та зараз детально з нею
+                                                                        ознайомимось.</p>
+                                                                      <p style="text-align: justify;">У якості першого
+                                                                        перетворення розглянемо найпростіше із них —
+                                                                        перетворення в логічний тип даних — <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>bool</strong></span>.
+                                                                        Для цього перетворення використовується
+                                                                        однойменна функція <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>bool()</strong></span>,
+                                                                        яка повертає логічний нуль <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>False</strong></span>,
+                                                                        якщо до неї передали пустий елемент, елемент із
+                                                                        нульовою довжиною або число нуль. Створимо
+                                                                        елементи знайомих типів, по два кожного. Один із
+                                                                        них буде пустим або нульовим, інший же буде мати
+                                                                        дані. Запишемо:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">bool_true = <span
+                                                                          class="hljs-literal">True</span>
+bool_false = <span class="hljs-literal">False</span>
+string = <span class="hljs-string">"string"</span>
+zero_string = <span class="hljs-string">""</span>
+my_int_float = <span class="hljs-number">1</span>
+zero = <span class="hljs-number">0</span>
+my_list = [<span class="hljs-number">0</span>]
+zero_list = []
+my_tuple = <span class="hljs-number">0</span>,
+zero_tuple = <span class="hljs-built_in">tuple</span>()
+my_set = {<span class="hljs-number">0</span>}
+zero_set = <span class="hljs-built_in">set</span>()
+my_dict = {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>}
+zero_dict = {}
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'bool_true -'</span>, <span class="hljs-built_in">bool</span>(bool_true))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'bool_false -'</span>, <span class="hljs-built_in">bool</span>(bool_false))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'string -'</span>, <span
+                                                                            class="hljs-built_in">bool</span>(string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_string -'</span>, <span class="hljs-built_in">bool</span>(zero_string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_int_float -'</span>, <span class="hljs-built_in">bool</span>(my_int_float))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero -'</span>, <span
+                                                                            class="hljs-built_in">bool</span>(zero))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_list -'</span>, <span
+                                                                            class="hljs-built_in">bool</span>(my_list))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_list -'</span>, <span class="hljs-built_in">bool</span>(zero_list))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_tuple -'</span>, <span
+                                                                            class="hljs-built_in">bool</span>(my_tuple))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_tuple -'</span>, <span class="hljs-built_in">bool</span>(zero_tuple))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_set -'</span>, <span
+                                                                            class="hljs-built_in">bool</span>(my_set))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_set -'</span>, <span
+                                                                            class="hljs-built_in">bool</span>(zero_set))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_dict -'</span>, <span
+                                                                            class="hljs-built_in">bool</span>(my_dict))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_dict -'</span>, <span class="hljs-built_in">bool</span>(zero_dict))</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Запустимо код
+                                                                        (відео 1):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/MQ58a5gKFF399c88NIRpagpEXhoIjmtM?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/MQ58a5gKFF399c88NIRpagpEXhoIjmtM?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <p style="text-align: center;"><span
+                                                                          style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 1</span>
+                                                                      </p>
+                                                                      <p style="text-align: justify;">Перетворення в
+                                                                        логічний тип вдалося. Як ви вже здогадались,
+                                                                        найчастіше його використовують для перевірки
+                                                                        елемента, нульовий він чи ні.</p>
+                                                                      <p style="text-align: justify;"><strong>Наступний
+                                                                        тип, з яким будемо працювати —
+                                                                        рядок.&nbsp;</strong></p>
+                                                                      <p style="text-align: justify;">Для перетворення
+                                                                        даних у рядок, використовується метод <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>str()</strong></span>.Треба
+                                                                        зазначити, якщо в метод нічого не передати, буде
+                                                                        створено пустий рядок. Запишемо:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">bool_true = <span
+                                                                          class="hljs-literal">True</span>
+bool_false = <span class="hljs-literal">False</span>
+string = <span class="hljs-string">"string"</span>
+zero_string = <span class="hljs-string">""</span>
+my_int_float = <span class="hljs-number">1</span>
+zero = <span class="hljs-number">0</span>
+my_list = [<span class="hljs-number">0</span>]
+zero_list = []
+my_tuple = <span class="hljs-number">0</span>,
+zero_tuple = <span class="hljs-built_in">tuple</span>()
+my_set = {<span class="hljs-number">0</span>}
+zero_set = <span class="hljs-built_in">set</span>()
+my_dict = {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>}
+zero_dict = {}
+zero_string_2 = <span class="hljs-built_in">str</span>()
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'bool_true -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(bool_true))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'bool_false -'</span>, <span class="hljs-built_in">str</span>(bool_false))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'string -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_string -'</span>, <span class="hljs-built_in">str</span>(zero_string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_int_float -'</span>, <span class="hljs-built_in">str</span>(my_int_float))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(zero))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_list -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(my_list))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_list -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(zero_list))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_tuple -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(my_tuple))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_tuple -'</span>, <span class="hljs-built_in">str</span>(zero_tuple))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_set -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(my_set))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_set -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(zero_set))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_dict -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(my_dict))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_dict -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(zero_dict))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_string_2 -'</span>, <span
+                                                                            class="hljs-built_in">str</span>(zero_string_2))</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Виконаємо код
+                                                                        (відео 2):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/dz3HPpl4VgyAyD6GssZbiGQ4LR5lMItl?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/dz3HPpl4VgyAyD6GssZbiGQ4LR5lMItl?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 2</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;"><strong>Наступним
+                                                                        типом даних, який ми отримаємо за перетворення
+                                                                        буде цілочисельний.</strong> Одержати його можна
+                                                                        з допомогою функції <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>int()</strong></span>.
+                                                                        Але будьте уважні, ця функція працюватиме лише з
+                                                                        числовими типами даних і рядками, причому рядок
+                                                                        має містити виключно цифри. Якщо ж нічого не
+                                                                        передати всередину функції, вона поверне число
+                                                                        нуль. Запишемо:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">bool_true = <span
+                                                                          class="hljs-literal">True</span>
+bool_false = <span class="hljs-literal">False</span>
+string = <span class="hljs-string">"0"</span>
+my_int = <span class="hljs-number">1</span>
+my_float = <span class="hljs-number">1.1</span>
+zero = <span class="hljs-built_in">int</span>()
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'bool_true -'</span>, <span
+                                                                            class="hljs-built_in">int</span>(bool_true))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'bool_false -'</span>, <span class="hljs-built_in">int</span>(bool_false))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'string -'</span>, <span
+                                                                            class="hljs-built_in">int</span>(string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_int -'</span>, <span
+                                                                            class="hljs-built_in">int</span>(my_int))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_float -'</span>, <span
+                                                                            class="hljs-built_in">int</span>(my_float))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero -'</span>, zero)</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Маємо (відео
+                                                                        3):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/0VZVCWGc3hQxzoMV98kl3VfMsCtxqCjO?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/0VZVCWGc3hQxzoMV98kl3VfMsCtxqCjO?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 3</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;"><strong>Аналогічні
+                                                                        вимоги працюють і для перетворення в дійсні
+                                                                        числа методом&nbsp;</strong><span
+                                                                          style="color: rgb(147, 101, 184);"><strong>float()</strong></span><strong>.</strong>
+                                                                        Але під час перетворення допускається
+                                                                        використання крапки, що відділяє цілу частину
+                                                                        від дробової:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">bool_true = <span
+                                                                          class="hljs-literal">True</span>
+bool_false = <span class="hljs-literal">False</span>
+string = <span class="hljs-string">"0.1"</span>
+my_int = <span class="hljs-number">1</span>
+my_float = <span class="hljs-number">1.1</span>
+zero = <span class="hljs-built_in">float</span>()
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'bool_true -'</span>, <span class="hljs-built_in">float</span>(bool_true))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'bool_false -'</span>, <span class="hljs-built_in">float</span>(bool_false))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'string -'</span>, <span
+                                                                            class="hljs-built_in">float</span>(string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_int -'</span>, <span
+                                                                            class="hljs-built_in">float</span>(my_int))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_float -'</span>, <span class="hljs-built_in">float</span>(my_float))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero -'</span>, zero)</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Запустимо код
+                                                                        (відео 4):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/n0Jd0_TZrh9EmS4G_OY8l8x_3AMA0Vuq?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/n0Jd0_TZrh9EmS4G_OY8l8x_3AMA0Vuq?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 4</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;"><strong>На черзі
+                                                                        перетворення в список, кортеж, множину
+                                                                        й&nbsp;</strong><span
+                                                                          style="color: rgb(147, 101, 184);"><strong>frozenset</strong></span>.&nbsp;
+                                                                      </p>
+                                                                      <p style="text-align: justify;">Вони мають
+                                                                        однакові вимоги до вхідних даних, які мають бути
+                                                                        ітерованими, тобто складатися з окремих
+                                                                        елементів. До таких належать рядки, списки,
+                                                                        кортежі, словники, множини, <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>frozenset&nbsp;</strong></span>тощо.
+                                                                        Отже, для перетворення даних у список
+                                                                        використовується функція <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>list()</strong></span>.
+                                                                        Аналогічно до попередніх функцій, нічого не
+                                                                        передавши всередину отримаємо пустий список. Для
+                                                                        перетворення даних у список запишемо:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">string = <span
+                                                                          class="hljs-string">"string"</span>
+my_list = [<span class="hljs-number">0</span>]
+my_tuple = <span class="hljs-number">0</span>,
+my_set = {<span class="hljs-number">0</span>}
+my_frozenset = <span class="hljs-built_in">frozenset</span>()
+my_dict = {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>}
+zero_list = <span class="hljs-built_in">list</span>()
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'string -'</span>, <span
+                                                                            class="hljs-built_in">list</span>(string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_list -'</span>, <span
+                                                                            class="hljs-built_in">list</span>(my_list))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_tuple -'</span>, <span
+                                                                            class="hljs-built_in">list</span>(my_tuple))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_set -'</span>, <span
+                                                                            class="hljs-built_in">list</span>(my_set))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_frozenset -'</span>, <span class="hljs-built_in">list</span>(my_frozenset))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_dict -'</span>, <span
+                                                                            class="hljs-built_in">list</span>(my_dict))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'zero_list -'</span>, <span class="hljs-built_in">list</span>(zero_list))</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Отримали (відео
+                                                                        5):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/78iJk28XnjXYBUuDrnt3luXuAfbtMzQn?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/78iJk28XnjXYBUuDrnt3luXuAfbtMzQn?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 5</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Як ви вже знаєте,
+                                                                        функція <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>tuple()</strong></span>
+                                                                        створює пустий кортеж. Але також з її допомогою
+                                                                        можна перетворити дані на кортеж:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">string = <span
+                                                                          class="hljs-string">"string"</span>
+my_list = [<span class="hljs-number">0</span>]
+my_tuple = <span class="hljs-number">0</span>,
+my_set = {<span class="hljs-number">0</span>}
+my_frozenset = <span class="hljs-built_in">frozenset</span>()
+my_dict = {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>}
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'string -'</span>, <span
+                                                                            class="hljs-built_in">tuple</span>(string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_list -'</span>, <span
+                                                                            class="hljs-built_in">tuple</span>(my_list))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_tuple -'</span>, <span class="hljs-built_in">tuple</span>(my_tuple))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_set -'</span>, <span
+                                                                            class="hljs-built_in">tuple</span>(my_set))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_frozenset -'</span>, <span class="hljs-built_in">tuple</span>(my_frozenset))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_dict -'</span>, <span
+                                                                            class="hljs-built_in">tuple</span>(my_dict))</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Маємо (відео
+                                                                        6):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/KAGE4L098DTM74tSIgMMSfc6kZxQ4FE8?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/KAGE4L098DTM74tSIgMMSfc6kZxQ4FE8?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 6</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Перетворимо дані
+                                                                        на множину з допомогою функції <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>set()</strong></span>:
+                                                                      </p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">string = <span
+                                                                          class="hljs-string">"string"</span>
+my_list = [<span class="hljs-number">0</span>]
+my_tuple = <span class="hljs-number">0</span>,
+my_set = {<span class="hljs-number">0</span>}
+my_frozenset = <span class="hljs-built_in">frozenset</span>()
+my_dict = {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>}
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'string -'</span>, <span
+                                                                            class="hljs-built_in">set</span>(string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_list -'</span>, <span
+                                                                            class="hljs-built_in">set</span>(my_list))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_tuple -'</span>, <span
+                                                                            class="hljs-built_in">set</span>(my_tuple))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_set -'</span>, <span
+                                                                            class="hljs-built_in">set</span>(my_set))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_frozenset -'</span>, <span class="hljs-built_in">set</span>(my_frozenset))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_dict -'</span>, <span
+                                                                            class="hljs-built_in">set</span>(my_dict))</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Маємо (відео
+                                                                        7):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/ZSociktgMNPLXq2c2mvtdeAfRoLLCA7o?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/ZSociktgMNPLXq2c2mvtdeAfRoLLCA7o?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 7</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Залишилося
+                                                                        перетворити дані у <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>frozenset</strong></span>.
+                                                                        Очевидно, для цього використовується функція
+                                                                        <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>frozenset(</strong></span>),
+                                                                        якою ми вже користувались:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">string = <span
+                                                                          class="hljs-string">"string"</span>
+my_list = [<span class="hljs-number">0</span>]
+my_tuple = <span class="hljs-number">0</span>,
+my_set = {<span class="hljs-number">0</span>}
+my_frozenset = <span class="hljs-built_in">frozenset</span>()
+my_dict = {<span class="hljs-number">0</span>:<span class="hljs-number">0</span>}
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'string -'</span>, <span class="hljs-built_in">frozenset</span>(string))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_list -'</span>, <span class="hljs-built_in">frozenset</span>(my_list))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_tuple -'</span>, <span class="hljs-built_in">frozenset</span>(my_tuple))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_set -'</span>, <span class="hljs-built_in">frozenset</span>(my_set))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_frozenset -'</span>, <span class="hljs-built_in">frozenset</span>(my_frozenset))
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'my_dict -'</span>, <span class="hljs-built_in">frozenset</span>(my_dict))</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Результат (відео
+                                                                        8):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/PoR9YYbLzDq6pKCcWWrZJws-lG2bii23?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/PoR9YYbLzDq6pKCcWWrZJws-lG2bii23?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 8</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Найскладніше
+                                                                        перетворити дані в словник. Для цього
+                                                                        використовується функція <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>dict()</strong></span>.
+                                                                        Звісно ж, якщо нічого не передати всередину,
+                                                                        отримаємо пустий словник. Для перетворення
+                                                                        необхідно передати елемент типу список, кортеж,
+                                                                        множина або <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>frozenset</strong></span>,
+                                                                        що містять ітеровані елементи, причому вони
+                                                                        мають включати два елементи, перший із яких
+                                                                        стане ключем, а другий — значенням. Водночас
+                                                                        якщо елементом, що передається, є множина або
+                                                                        <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>frozenset</strong></span>,
+                                                                        то допускається використання лише незмінних
+                                                                        типів даних всередині них:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">my_list = [<span
+                                                                          class="hljs-string">'01'</span>, [<span
+                                                                          class="hljs-string">"1"</span>,<span
+                                                                          class="hljs-number">2</span>], (<span
+                                                                          class="hljs-number">2</span>,<span
+                                                                          class="hljs-string">"3"</span>), {<span
+                                                                          class="hljs-number">3.3</span>,<span
+                                                                          class="hljs-number">4</span>}, <span
+                                                                          class="hljs-built_in">frozenset</span>({<span
+                                                                          class="hljs-number">5</span>,<span
+                                                                          class="hljs-number">6</span>})]
+my_tuple = (<span class="hljs-string">'01'</span>, [<span class="hljs-string">"1"</span>,<span
+                                                                            class="hljs-number">2</span>], (<span
+                                                                            class="hljs-number">2</span>,<span
+                                                                            class="hljs-string">"3"</span>), {<span
+                                                                            class="hljs-number">3.3</span>,<span
+                                                                            class="hljs-number">4</span>}, <span
+                                                                            class="hljs-built_in">frozenset</span>({<span
+                                                                            class="hljs-number">5</span>,<span
+                                                                            class="hljs-number">6</span>}))
+my_set = {<span class="hljs-string">'01'</span>, (<span class="hljs-number">2</span>,<span
+                                                                            class="hljs-string">"3"</span>), <span
+                                                                            class="hljs-built_in">frozenset</span>({<span
+                                                                            class="hljs-number">5</span>,<span
+                                                                            class="hljs-number">6</span>})}
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">dict</span>(my_list))
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">dict</span>(my_tuple))
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">dict</span>(my_set))</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Маємо (відео
+                                                                        9):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/yx4SQio7vQac0kFoR42oXZBeyBF5FqWn?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/yx4SQio7vQac0kFoR42oXZBeyBF5FqWn?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 9</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">З допомогою
+                                                                        функції <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>dict()</strong></span>
+                                                                        можна напряму створити словник з елементами.
+                                                                        Водночас всередину дужок поміщаються назви, які
+                                                                        перетворяться на рядки та стануть ключами, а
+                                                                        через знак <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>«=»</strong></span>
+                                                                        вводяться значення:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">my_dict = <span
+                                                                          class="hljs-built_in">dict</span>(string = <span
+                                                                          class="hljs-string">'string'</span>, number = <span
+                                                                          class="hljs-number">0</span>, <span
+                                                                          class="hljs-built_in">list</span> = [])
+<span class="hljs-built_in">print</span>(my_dict)</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">У результаті
+                                                                        отримаємо (відео 10):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/tCGtId4FuhvAT7aJyPFs4jUm-ohkcjn9?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/tCGtId4FuhvAT7aJyPFs4jUm-ohkcjn9?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 10</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <h3 style="text-align: justify;" id="h-H3_1"><span
+                                                                          style="color: rgb(147, 101, 184);"><strong>Стартапер</strong></span>
+                                                                      </h3>
+                                                                      <p style="text-align: justify;"><strong>Тепер,
+                                                                        коли ми вміємо перетворювати дані, скористаємось
+                                                                        набутими знаннями. Для цього уяви себе
+                                                                        стартапером, який має обмежений бюджет (рис
+                                                                        1).</strong>&nbsp;</p>
+                                                                      <p style="text-align: justify;">Тобі необхідно
+                                                                        витратити його на найважливіші речі та тільки
+                                                                        від тебе залежить, що це буде. А додаток, який
+                                                                        зараз створимодасть змогу розрахувати витрати.
+                                                                        Тож перейдемо до розробки.</p>
+                                                                      <p style="text-align: center;"><span
+                                                                          class="fr-img-caption back-process fr-dib"
+                                                                          style="width: 676px;"><span
+                                                                          class="fr-img-wrap"><div
+                                                                          class="img-block"><img
+                                                                          src="./Перетворення даних __ Урок 7_files/image10.jpg"
+                                                                          alt="gtgf1vt5OPfVh2p6UXzGHFkIpMO1xT8O"
+                                                                          class="back-process fr-dib"
+                                                                          id="img2"></div><span class="fr-inner">Малюнок 1</span></span></span>
+                                                                      </p>
+                                                                      <p style="text-align: justify;">Спершу необхідно
+                                                                        створити елемент, у якому будемо зберігати
+                                                                        покупки. Доцільніше всього як «кошик»
+                                                                        використати словник, адже в ньому зручно
+                                                                        зберігати назви товарів і їхні ціни. Отже,
+                                                                        створимо його:</p>
+                                                                      <div class="pre-wrapper">
+                                                                        <pre class="language-python hljs"
+                                                                             translate="no">my_basket = {}</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Тепер попрацюємо з
+                                                                        його наповненням. Очевидно, що будемо вводити
+                                                                        назви з клавіатури, тому додамо відповідний
+                                                                        елемент <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>input()</strong></span>
+                                                                        як ключ. Звичайно, ціну теж доведеться вводити з
+                                                                        клавіатури, але постає проблема: з клавіатури
+                                                                        вводяться дані типу рядок. Отже, необхідно
+                                                                        перетворити введений користувачем рядок на
+                                                                        число. Для цього скористаємось функцією<span
+                                                                            style="color: rgb(147, 101, 184);"><strong>&nbsp;int()</strong></span>,
+                                                                        всередину якої помістимо <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>input()</strong></span>:
+                                                                      </p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">my_basket = {}
+my_basket[<span class="hljs-built_in">input</span>()] = <span class="hljs-built_in">int</span>(<span
+                                                                            class="hljs-built_in">input</span>())
+<span class="hljs-built_in">print</span>(my_basket)</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Запустимо його,
+                                                                        щоби перевірити роботу (відео 11):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/y2HpoEHjCiYVNf96zNU4av3y81DEazbq?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/y2HpoEHjCiYVNf96zNU4av3y81DEazbq?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 11</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Як бачимо, спершу
+                                                                        вводиться значення, а вже потім ціна. Це не дуже
+                                                                        зручно, тому, щоби це пофіксити, створимо
+                                                                        змінну, якій присвоїмо <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>input()</strong></span>
+                                                                        і, яка буде передаватись як ключ під час
+                                                                        додавання елемента словника:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">my_basket = {}
+ware_1 = <span class="hljs-built_in">input</span>()
+my_basket[ware_1] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())
+<span class="hljs-built_in">print</span>(my_basket)</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Тепер маємо (відео
+                                                                        12):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/HbQSBa8LY81-t6EdYksCTvXh0Be6c9bU?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/HbQSBa8LY81-t6EdYksCTvXh0Be6c9bU?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 12</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Додамо рядки в
+                                                                        <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>input()</strong></span>,
+                                                                        які пояснюють що необхідно ввести<a
+                                                                            href="http://onlinecorrector.com.ua/%D0%B7%D0%B4%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8-%D0%B4%D1%96%D1%81%D1%82%D0%B0%D0%B2%D0%B0%D1%82%D0%B8-%D0%BD%D0%B0%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8">:</a>
+                                                                      </p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">my_basket = {}
+ware_1 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name -"</span>)
+my_basket[ware_1] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value -"</span>)</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Оскільки ми молоді
+                                                                        стартапери, то будемо обирати п'ять
+                                                                        найважливіших речей. Для цього створимо ще
+                                                                        чотири змінні за тим же принципом:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">my_basket = {}
+ware_1 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_1] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_2 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_2] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_3 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_3] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_4 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_4] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_5 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_5] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Заповнивши кошик,
+                                                                        потрібно знайти суму, яка буде витрачена на
+                                                                        товари. Для цього скористаємось функцією <span
+                                                                            style="color: rgb(147, 101, 184);"><strong>sum()</strong></span>,
+                                                                        всередину якої передамо значення наших ключів:
+                                                                      </p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">my_basket = {}
+ware_1 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_1] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_2 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_2] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_3 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_3] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_4 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_4] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_5 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_5] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+total_cost = <span class="hljs-built_in">sum</span>(my_basket.values())</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Лишилося вивести
+                                                                        результати роботи додатку на екран. Для цього
+                                                                        додамо рядки:</p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs"
+                                                                          translate="no"><span class="hljs-built_in">print</span>(<span
+                                                                          class="hljs-string">'We bought these goods:'</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Total cost -"</span>, total_cost)</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;"><strong>Готовий
+                                                                        код має вигляд:</strong></p>
+                                                                      <div class="pre-wrapper"><pre
+                                                                          class="language-python hljs" translate="no">my_basket = {}
+ware_1 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_1] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_2 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_2] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_3 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_3] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_4 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_4] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+ware_5 = <span class="hljs-built_in">input</span>(<span class="hljs-string">"product name - "</span>)
+my_basket[ware_5] = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                            class="hljs-string">"value - "</span>))
+total_cost = <span class="hljs-built_in">sum</span>(my_basket.values())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'We bought these goods:'</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">'ware -'</span>, my_basket.popitem())
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Total cost -"</span>, total_cost)</pre>
+                                                                        <a class="clipboard"
+                                                                           title="Copy to clipboard"><img
+                                                                            class="clipboard-icon"
+                                                                            src="./Перетворення даних __ Урок 7_files/copy-svgrepo-com.svg"></a>
+                                                                      </div>
+                                                                      <p style="text-align: justify;">Запустимо код і
+                                                                        впевнимось у коректній роботі програми (відео
+                                                                        13):</p>
+                                                                      <span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                          class="fr-draggable" controls=""
+                                                                          src="https://fsx1.itstep.org/api/v1/files/vsG2N0DeI42BLwxhKugH9Lizyqhg9ebm?inline"
+                                                                          poster="https://fsx1.itstep.org/api/v1/files/vsG2N0DeI42BLwxhKugH9Lizyqhg9ebm?inline=&amp;f=webp"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                          class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <p style="text-align: center;">
+                                                                                                              <span
+                                                                                                                  style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 13</span>
+                                                                                                            </p>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                      <p style="text-align: justify;"><strong>Наша
+                                                                        програма працює й дає змогу проводити
+                                                                        розрахунок.</strong></p>
+                                                                      <p style="text-align: justify;"><strong>Сьогодні
+                                                                        ми навчилися перетворювати дані, а отримані
+                                                                        практичні навички дали змогу створити програму
+                                                                        для розрахунку бюджету
+                                                                        стартап-проєкту.&nbsp;</strong></p>
+                                                                      <p style="text-align: justify;"><strong>На
+                                                                        наступному занятті освоїмо нові можливості
+                                                                        роботи з даними.</strong></p>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--<script type="text/javascript" id="www-widgetapi-script" src="./Перетворення даних __ Урок 7_files/www-widgetapi.js"-->
+<!--        async=""></script>-->
+<!--<script src="./Перетворення даних __ Урок 7_files/iframe_api"></script>-->
+<!--<script src="./Перетворення даних __ Урок 7_files/jquery-3.3.1.min.js"></script>-->
+<!--<script src="./Перетворення даних __ Урок 7_files/script.js"></script>-->
+
+
+</body>
+</html>

@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Знайомство з PYTHON :: Урок 1</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="./Знайомство з PYTHON __ Урок 1_files/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Знайомство з PYTHON __ Урок 1_files/monokai-sublime.min.css">
+  <link href="./Знайомство з PYTHON __ Урок 1_files/css2" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="content">
+    <div class="menu-btn menu-btn--active"></div>
+    <nav id="nav" class="d-flex flex-column flex-shrink-0 p-3 navbar">
+      <ul class="nav_container nav nav-pills flex-column mb-auto">
+        <li><a href="#h-H3_0"
+               class="link_wrap nav-link link-dark link_wrap_H3">Мова програмування Python</a></li>
+        <li><a href="#h-H3_1"
+               class="link_wrap nav-link link-dark link_wrap_H3">Repl.it</a></li>
+        <li><a href="#h-H3_2"
+               class="link_wrap nav-link link-dark link_wrap_H3">Перша програма</a></li>
+        <li><a href="#h-H3_3"
+               class="link_wrap nav-link link-dark link_wrap_H3">Змінні</a></li>
+        <li><a href="#h-H3_4"
+               class="link_wrap nav-link link-dark link_wrap_H3">Динамічна типізація</a></li>
+        <li><a href="#h-H3_5"
+               class="link_wrap nav-link link-dark link_wrap_H3">Ввід даних</a></li>
+      </ul>
+    </nav>
+    <p class="title">Знайомство з PYTHON</p>
+  </div>
+</header>
+<main class="page" style="background-color: #FF9C00">
+  <div class="wrap main-active">
+    <div class="fr-wrapper" data-codelang="py">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    <div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>
+                                              <div>
+                                                <div>
+                                                  <div>
+                                                    <div>
+                                                      <div>
+                                                        <div>
+                                                          <div>
+                                                            <div>
+                                                              <div>
+                                                                <div>
+                                                                  <div>
+                                                                    <div>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <h1 style="text-align: center;"><span
+                                                                                style="color: rgb(255, 156, 0);">&nbsp;</span>
+                                                                            </h1>
+                                                                            <h1 style="text-align: center;"><span
+                                                                                style="color: rgb(255, 156, 0);">Вступ</span>
+                                                                            </h1>
+                                                                            <p style="text-align: justify;">Кожної миті
+                                                                              органи чуття людини сприймають та
+                                                                              передають інформацію до нашого центру
+                                                                              обробки — мозку. Так само комп'ютеру й
+                                                                              комп'ютерним програмам необхідно мати
+                                                                              інформацію, яку вони будуть обробляти, —
+                                                                              <strong>вхідні&nbsp;</strong><strong>дані</strong>,
+                                                                              та інструкцію, як це робити — <strong>комп'ютерний
+                                                                                код</strong>. Завдання програміста
+                                                                              полягає у створенні програми, тобто
+                                                                              написання цієї інструкції для машини.</p>
+                                                                            <p style="text-align: center;">Отже,
+                                                                              <strong>програмування&nbsp;</strong>— це
+                                                                              процес створення програм через написання
+                                                                              комп'ютерного коду.&nbsp;<span
+                                                                                  class="fr-img-caption back-process fr-dib"
+                                                                                  style="width: 649px;"><span
+                                                                                  class="fr-img-wrap"><div
+                                                                                  class="img-block"><img
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/image1.jpg"
+                                                                                  alt="ePfPRx-MsWl95ZbiYCo0ef0DzcoEHSMq"
+                                                                                  class="back-process fr-dib" id="img2"></div><span
+                                                                                  class="fr-inner">Малюнок 1</span></span></span>
+                                                                            </p>
+                                                                            <p style="text-align: justify;">Під час
+                                                                              запуску програми ми надаємо машині вхідні
+                                                                              дані й інструкцію, як з ними працювати.
+                                                                              Комп'ютер перетворює всю цю інформацію в
+                                                                              <strong>машинний код</strong> — <strong>набір
+                                                                                нулів і одиниць</strong>, після чого
+                                                                              працює вже з ними. Тому всю інформацію
+                                                                              можна умовно поділити на два рівні:</p>
+                                                                            <ul>
+                                                                              <li style="text-align: justify;"><strong>високий&nbsp;</strong>—
+                                                                                той, який є зрозумілим для людини;
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><strong>низький&nbsp;</strong>—
+                                                                                той, що краще зрозуміє машина.
+                                                                              </li>
+                                                                            </ul>
+                                                                            <p style="text-align: center;"><span
+                                                                                class="fr-img-caption back-process fr-dib"
+                                                                                style="width: 676px;"><span
+                                                                                class="fr-img-wrap"><div
+                                                                                class="img-block"><img
+                                                                                src="./Знайомство з PYTHON __ Урок 1_files/image3.png"
+                                                                                alt="I4No8UETr_snKXxOSCVSAWi5jhXZ14po"
+                                                                                class="back-process fr-dib"
+                                                                                id="img3"></div><span class="fr-inner">Малюнок 2</span></span></span>
+                                                                            </p>
+                                                                            <h3 style="text-align: justify;"
+                                                                                id="h-H3_0"><span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Мова програмування Python</strong></span>
+                                                                            </h3>
+                                                                            <p style="text-align: justify;">Так само як
+                                                                              люди користуються різними мовами для
+                                                                              спілкування, для написання коду є <strong>мови
+                                                                                програмування</strong>.</p>
+                                                                            <p style="text-align: justify;"><strong>У
+                                                                              цьому курсі ми вивчатимемо одну з
+                                                                              найперспективніших —&nbsp;</strong><span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Python&nbsp;</strong></span><strong>(</strong><span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Пайтон</strong></span><strong>).
+                                                                              Розглянемо його переваги:</strong></p>
+                                                                            <ul>
+                                                                              <li style="text-align: justify;"><strong>Простота</strong>.
+                                                                                Python зрозумілий і вважається найлегшим
+                                                                                у вивченні.
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><strong>Лаконічність</strong>.
+                                                                                Має нескладний синтаксис, тобто правила
+                                                                                написання коду та буде зрозумілим
+                                                                                інтуїтивно.
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><strong>Швидкий
+                                                                                старт</strong>. Початок програмування на
+                                                                                Python буде досить швидким, як і перші
+                                                                                вагомі результати.
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><strong>Python&nbsp;</strong>—
+                                                                                <strong>в</strong><strong>исокорівнева
+                                                                                  мова програмування</strong>, що дає
+                                                                                змогу написати програму всього в кілька
+                                                                                рядків.
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><strong>Різноманітність</strong>.
+                                                                                На Python можна розробляти будь-які
+                                                                                додатки (десктопні — для комп'ютера,
+                                                                                веб, мобільніта ін.).
+                                                                              </li>
+                                                                            </ul>
+                                                                            <p style="text-align: center;"><span
+                                                                                class="fr-img-caption back-process fr-dib"
+                                                                                style="width: 676px;"><span
+                                                                                class="fr-img-wrap"><div
+                                                                                class="img-block"><img
+                                                                                src="./Знайомство з PYTHON __ Урок 1_files/image2.png"
+                                                                                alt="9M6NHZ25m9XEm52Er4GJWDrCCjCssFFc"
+                                                                                class="back-process fr-dib"
+                                                                                id="img4"></div><span class="fr-inner">Малюнок 3</span></span></span>
+                                                                            </p>
+                                                                            <p style="text-align: justify;"><strong>Вивчати
+                                                                              Python ми будемо, розглядаючи приклади й
+                                                                              створюючи власні додатки та ігри.
+                                                                              Перейдемо до практики!</strong></p>
+                                                                            <h3 style="text-align: justify;"
+                                                                                id="h-H3_1"><span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Repl.it</strong></span>
+                                                                            </h3>
+                                                                            <p style="text-align: justify;">Для
+                                                                              написання коду ми користуватимемося
+                                                                              сервісом <a href="https://repl.it/"
+                                                                                          target="_blank">Repl.it</a>.
+                                                                              Це повноцінне середовище розробки, яке
+                                                                              працює прямо в браузері й не потребує
+                                                                              додаткового встановлення програмного
+                                                                              забезпечення.<span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>&nbsp;Repl.it</strong></span>
+                                                                              дає нам змогу одразу почати написання
+                                                                              коду, до того ж з будь-якого пристрою.</p>
+                                                                            <p style="text-align: justify;">Перейдіть на
+                                                                              сайт, натисніть <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Start coding</strong></span>
+                                                                              та зареєструйтеся. Для прискорення
+                                                                              реєстрації, можна використати обліковий
+                                                                              запис <strong>Google</strong>, <strong>Github&nbsp;</strong>або
+                                                                              <strong>Facebook&nbsp;</strong>(Відео 1).
+                                                                            </p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/8wnZ342AjPh4tbqDdSajMPJmQUGVB169?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/8wnZ342AjPh4tbqDdSajMPJmQUGVB169?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <p style="text-align: center;"><span
+                                                                                style="color: rgb(209, 213, 216); font-size: 14px;">Відео 1</span>
+                                                                            </p>
+                                                                            <p style="text-align: justify;">Наступним
+                                                                              кроком логінимось і потрапляємо на домашню
+                                                                              сторінку. У лівому верхньому куті бачимо
+                                                                              свій логін, а нижче — вкладки для роботи,
+                                                                              серед яких нам потрібні:</p>
+                                                                            <ul>
+                                                                              <li style="text-align: justify;"><strong
+                                                                                  style="font-weight: 700; color: rgb(147, 101, 184); font-family: Inter, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Home&nbsp;</strong>—
+                                                                                повертає нас на домашню сторінку;
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>My repls</strong></span>
+                                                                                — перелік створених програм;
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Languages&nbsp;</strong></span>—
+                                                                                дає змогу обрати мови програмування;
+                                                                              </li>
+                                                                              <li style="text-align: justify;">
+                                                                                <strong><span
+                                                                                    style="color: rgb(147, 101, 184);">Tutorials&nbsp;</span></strong>—
+                                                                                приклади програм;
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Templates&nbsp;</strong></span>—
+                                                                                шаблони для створення сайтів і додатків.
+                                                                              </li>
+                                                                            </ul>
+                                                                            <p style="text-align: justify;"><strong>Ознайомившись
+                                                                              із базовим інтерфейсом, перейдемо до
+                                                                              створення програми.</strong></p>
+                                                                            <p style="text-align: justify;">У верхньому
+                                                                              лівому куті екрана натисніть <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>New Repl</strong></span>.
+                                                                              У вікні, яке з'явилося в полі <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Languages&nbsp;</strong></span>(<strong>мови</strong>),
+                                                                              виберіть <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Python</strong></span>.
+                                                                              Для нового проєкту буде згенероване
+                                                                              випадкове ім'я (його можна змінювати).
+                                                                              Натискаємо <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Create repl&nbsp;</strong></span><span
+                                                                                  style="color: rgb(0, 0, 0);">(Відео 2)</span><span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>.&nbsp;</strong></span>
+                                                                            </p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/f1P4mKAw8vUqCrKpY9kAMoCIs2EyEVg1?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/f1P4mKAw8vUqCrKpY9kAMoCIs2EyEVg1?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <p style="text-align: center;"><span
+                                                                                style="font-size: 14px; color: rgb(209, 213, 216);">Відео 2</span>
+                                                                            </p>
+                                                                            <p style="text-align: justify;"><strong>Сторінка
+                                                                              проєкту розділена на три колонки:</strong>
+                                                                            </p>
+                                                                            <p style="text-align: justify;">
+                                                                              <strong>1.</strong> У лівій колонці можна
+                                                                              побачити список файлів проєкту (Мал.4).
+                                                                              Автоматично генерується файл з назвою
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>main.py</strong></span>,
+                                                                              яка зазвичай використовується для
+                                                                              головного файлу програми, тобто саме його
+                                                                              треба запускати для роботи програми. Поки
+                                                                              що ми будемо працювати лише з ним.</p>
+                                                                            <p style="text-align: center;"><span
+                                                                                class="fr-img-caption back-process fr-dib"
+                                                                                style="width: 246px;"><span
+                                                                                class="fr-img-wrap"><div
+                                                                                class="img-block"><img
+                                                                                src="./Знайомство з PYTHON __ Урок 1_files/image7.png"
+                                                                                alt="QCbewEKCg1pGCUhKOc-gSwn9iNHqTQoi"
+                                                                                class="back-process fr-dib"
+                                                                                id="img5"></div><span class="fr-inner">Малюнок 4</span></span></span>
+                                                                            </p>
+                                                                            <p style="text-align: justify;">
+                                                                              <strong>2.</strong> У центральній колонці
+                                                                              — поле, у якому ми будемо писати код
+                                                                              програми.</p>
+                                                                            <p style="text-align: center;"><span
+                                                                                class="fr-img-caption back-process fr-dib"
+                                                                                style="width: 636px;"><span
+                                                                                class="fr-img-wrap"><div
+                                                                                class="img-block"><img
+                                                                                src="./Знайомство з PYTHON __ Урок 1_files/image6.png"
+                                                                                alt="bp3w8t_CoRBxYFv04oUWaXwzPWPus3Gm"
+                                                                                class="back-process fr-dib"
+                                                                                id="img6"></div><span class="fr-inner">Малюнок 5</span></span></span>
+                                                                            </p>
+                                                                            <p style="text-align: justify;">
+                                                                              <strong>3.</strong> Права колонка містить
+                                                                              дві вкладки:</p>
+                                                                            <ul>
+                                                                              <li style="text-align: justify;"><span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Console&nbsp;</strong></span>—
+                                                                                консоль. Сюди програма виводитиме
+                                                                                результат своєї роботи.
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Shell&nbsp;</strong></span>—
+                                                                                дає змогу проводити додаткові
+                                                                                налаштування програмного середовища.
+                                                                              </li>
+                                                                            </ul>
+                                                                            <p style="text-align: center;"><span
+                                                                                class="fr-img-caption back-process fr-dib"
+                                                                                style="width: 624px;"><span
+                                                                                class="fr-img-wrap"><div
+                                                                                class="img-block"><img
+                                                                                src="./Знайомство з PYTHON __ Урок 1_files/image9.png"
+                                                                                alt="slBK4hFW8ZxgCqG-m2KHFO8Gkyy4by3n"
+                                                                                class="back-process fr-dib"
+                                                                                id="img7"></div><span class="fr-inner">Малюнок 6</span></span></span>
+                                                                            </p>
+                                                                            <h3 style="text-align: justify;"
+                                                                                id="h-H3_2"><strong><span
+                                                                                style="color: rgb(147, 101, 184);">Перша програма</span></strong>
+                                                                            </h3>
+                                                                            <p style="text-align: justify;"><strong>Для
+                                                                              першої програми скористаємося стандартним
+                                                                              завданням — виведемо на консоль рядок
+                                                                              "Hello World!".</strong></p>
+                                                                            <p style="text-align: justify;">Для
+                                                                              виконання цього завдання необхідно
+                                                                              передати машині
+                                                                              <strong>інструкції&nbsp;</strong>та
+                                                                              <strong>вхідні дані</strong><a
+                                                                                  href="http://onlinecorrector.com.ua/%D1%86%D0%B5%D0%B9-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D0%BF%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9">.</a>
+                                                                            </p>
+                                                                            <p style="text-align: justify;">Інструкцією
+                                                                              (кодом), яка буде обробляти дані є
+                                                                              <strong>стандартна функція</strong> <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>print()</strong></span>.
+                                                                            </p>
+                                                                            <p style="text-align: justify;"><span
+                                                                                style="color: rgb(147, 101, 184);"><strong>print()</strong></span>
+                                                                              — виводить на консоль елементи, прописані
+                                                                              в неї між дужками. Якщо елементів два і
+                                                                              більше, їх необхідно розділяти комами.</p>
+                                                                            <p style="text-align: justify;">Вхідними
+                                                                              даними для цієї функції буде рядок
+                                                                              "<strong>Hello World</strong>!". Але для
+                                                                              того, щоб машина нас зрозуміла, і видала
+                                                                              правильний результат, необхідно розповісти
+                                                                              їй, що це за дані. Проводячи аналогію з
+                                                                              життям, ми сприймаємо інформацію завдяки
+                                                                              зору, слуху, нюху і т. д., так і в
+                                                                              програмуванні інформація надходить з
+                                                                              різних каналів та має різні типи. У нашому
+                                                                              випадку в рядку "<strong>Hello
+                                                                                World</strong>!" тип даних, що
+                                                                              передаються — рядок. Але для того, щоб
+                                                                              машина це правильно зрозуміла, необхідно
+                                                                              обгорнути "<strong>Hello World</strong>!"
+                                                                              в одинарні або подвійні лапки:</p>
+                                                                            <div class="pre-wrapper">
+                                                                              <pre class="language-python hljs"
+                                                                                   translate="no"><span
+                                                                                  class="hljs-string">"Hello World!"</span></pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">або</p>
+                                                                            <div class="pre-wrapper">
+                                                                              <pre class="language-python hljs"
+                                                                                   translate="no"><span
+                                                                                  class="hljs-string">'Hello World!'</span></pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Тепер
+                                                                              помістимо рядок всередину функції <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>print()</strong></span>.
+                                                                              Ставимо курсор у центральній колонці та
+                                                                              прописуємо:</p>
+                                                                            <div class="pre-wrapper">
+                                                                              <pre class="language-python hljs"
+                                                                                   translate="no"><span
+                                                                                  class="hljs-built_in">print</span>(<span
+                                                                                  class="hljs-string">"Hello World!"</span>)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">або</p>
+                                                                            <div class="pre-wrapper">
+                                                                              <pre class="language-python hljs"
+                                                                                   translate="no"><span
+                                                                                  class="hljs-built_in">print</span>(<span
+                                                                                  class="hljs-string">'Hello World!'</span>)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Залишається
+                                                                              лише запустити код, натиснувши клавішу
+                                                                              «<span style="color: rgb(147, 101, 184);"><strong>Run</strong></span>»
+                                                                              вгорі по центру (Відео 3).</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/6yOdqyDKGnSPMpQO1phf_DHeryetPCKB?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/6yOdqyDKGnSPMpQO1phf_DHeryetPCKB?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <p style="text-align: center;"><span
+                                                                                style="color: rgb(209, 213, 216); font-size: 14px;">Відео 3&nbsp;</span>
+                                                                            </p>
+                                                                            <h3 style="text-align: justify;"
+                                                                                id="h-H3_3"><span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Змінні</strong></span>
+                                                                            </h3>
+                                                                            <p style="text-align: justify;"><strong>А
+                                                                              тепер уявімо, що в нас є велика програма,
+                                                                              яка повідомляє Супермена про
+                                                                              небезпеку.</strong></p>
+                                                                            <p style="text-align: justify;">Оскільки
+                                                                              герой постійно рятує світ, то рядок
+                                                                              "<strong>Superman</strong>"
+                                                                              використовується багато разів. Та зараз
+                                                                              він відправився ліквідовувати загрозу з
+                                                                              іншого виміру, через що виникла потреба
+                                                                              повідомити про небезпеку іншого
+                                                                              супергероя, наприклад,
+                                                                              <strong>Аквамена</strong>, тоді доведеться
+                                                                              надсилати повідомлення іншому герою,
+                                                                              використовуючи рядок
+                                                                              "<strong>Aquaman</strong>". Але якщо ми
+                                                                              будемо щоразу прописувати його ім'я, зло
+                                                                              встигне захопити світ. Тому ми просто
+                                                                              збережемо ім'я героя в змінній і для
+                                                                              вибору іншого адресата нам буде достатньо
+                                                                              лише раз змінити його всередині змінної —
+                                                                              свого роду «контейнера», у який
+                                                                              поміщаються дані. Коли ми звертаємося до
+                                                                              нього, він віддає те, що лежить всередині.
+                                                                              Щоб не заплутатись, що і в якому
+                                                                              «контейнері» лежить, є назва змінної.
+                                                                              Спробуємо створити змінну <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>name</strong></span>,
+                                                                              надавши їй значення з ім'ям супергероя.
+                                                                              Для цього в першому рядку програми
+                                                                              пропишемо:</p>
+                                                                            <div class="pre-wrapper">
+                                                                              <pre class="language-python hljs"
+                                                                                   translate="no">name = <span
+                                                                                  class="hljs-string">"Superman"</span></pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;"><strong>Під
+                                                                              час побудови програм, треба враховувати,
+                                                                              що код виконується послідовно, тобто
+                                                                              спершу буде виконуватися код першого
+                                                                              рядку, далі другого і т. д.</strong></p>
+                                                                            <p style="text-align: justify;">З огляду на
+                                                                              це виведемо змінну на консоль:
+                                                                              скористаємось уже знайомою функцією <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>print()</strong></span>.
+                                                                              Пропишемо її в другому рядку, вставивши
+                                                                              між дужками назву змінної. Запустимо
+                                                                              програму (Відео 4).</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/419BJwbVRJbHHgUWovkMpD0YtwVJEoBQ?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/419BJwbVRJbHHgUWovkMpD0YtwVJEoBQ?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <p style="text-align: center;">
+                                                                                                      <span
+                                                                                                          style="color: rgb(209, 213, 216); font-size: 14px;">Відео 4</span>
+                                                                                                    </p>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">
+                                                                              Пересвідчившись у тому, що консоль
+                                                                              виводить рядок, замінимо "<span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Superman</strong></span>"
+                                                                              на "<span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Aquaman</strong></span>",
+                                                                              не чіпаючи функцію <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>print()</strong></span>.
+                                                                              Знову запустимо код (Відео 5).</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/mOTi1KZxSD0y3zop5-rT211dLMXazF35?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/mOTi1KZxSD0y3zop5-rT211dLMXazF35?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <p style="text-align: center;">
+                                                                                                      <span
+                                                                                                          style="color: rgb(209, 213, 216); font-size: 14px;">Відео 5</span>
+                                                                                                    </p>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Тепер на
+                                                                              консоль вивівся рядок <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Aquaman</strong></span>,
+                                                                              усередині «контейнера» міститься ім'я
+                                                                              іншого супергероя, а код функції <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>print()</strong></span>
+                                                                              не змінювався.</p>
+                                                                            <p style="text-align: justify;"><strong>Отже,
+                                                                              змінні значно спрощують роботу з кодом,
+                                                                              роблячи його
+                                                                              <em>універсальним</em>.</strong></p>
+                                                                            <p style="text-align: justify;"><strong>Тепер
+                                                                              зробимо так, щоб
+                                                                              функція&nbsp;</strong><span
+                                                                                style="color: rgb(147, 101, 184);"><strong>print()</strong></span><strong>&nbsp;також
+                                                                              виводила вік супергероя.</strong></p>
+                                                                            <p style="text-align: justify;">Вік зручно
+                                                                              вказувати в числовому форматі, тому,
+                                                                              всередині дужок, після змінної <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>name</strong></span>,поставимо
+                                                                              кому та додамо елемент зі значенням 27,
+                                                                              після чого запустимо код (Відео 6).</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/X5OvMdLmxRV8y5L_FkwzK9TLrY5zhQqv?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/X5OvMdLmxRV8y5L_FkwzK9TLrY5zhQqv?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <p style="text-align: center;">
+                                                                                                      <span
+                                                                                                          style="color: rgb(209, 213, 216); font-size: 14px;">Відео 6</span>
+                                                                                                    </p>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Зараз
+                                                                              людина, яка читатиме наш код, зможе лише
+                                                                              здогадуватися про значення числа 27.
+                                                                              Найзручніший спосіб розкрити закладений
+                                                                              сенс — покласти його в змінну, назва якої
+                                                                              буде пояснювати зміст даних у ній. У
+                                                                              нашому випадку назвемо її <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>age&nbsp;</strong></span>(вік).
+                                                                              Для цього перенесемо <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>print()&nbsp;</strong></span>на
+                                                                              третій рядок, а в другому пропишемо нову
+                                                                              змінну. Лишається відкоригувати функцію
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>print()</strong></span>,
+                                                                              замінивши 27 змінною <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>age</strong></span>.
+                                                                            </p>
+                                                                            <p style="text-align: justify;">Запускаємо
+                                                                              код і бачимо, що на консолі з'являється
+                                                                              той самий напис (Відео 7).</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/rwAhm9xonpO-g8kFSubxLLr3Y69nTX5l?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/rwAhm9xonpO-g8kFSubxLLr3Y69nTX5l?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <p style="text-align: center;">
+                                                                                                      <span
+                                                                                                          style="color: rgb(209, 213, 216); font-size: 14px;">Відео 7</span>
+                                                                                                    </p>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Тепер той,
+                                                                              хто читатиме код програми зрозуміє, що 27
+                                                                              означає вік і за необхідності зможе його
+                                                                              змінити. Тепер код став зрозумілішим.</p>
+                                                                            <p style="text-align: justify;">Крім того,
+                                                                              ми пересвідчились, що змінні є лише
+                                                                              «контейнерами». Усередині них можна
+                                                                              зберігати не лише рядки, а й числа, та
+                                                                              багато інших типів даних. &nbsp;</p>
+                                                                            <p style="text-align: justify;"><strong>Під
+                                                                              час створення змінних, будьте уважними,
+                                                                              оскільки їхні назви:</strong></p>
+                                                                            <ul>
+                                                                              <li style="text-align: justify;">можуть
+                                                                                містити лише латинські літери, цифри та
+                                                                                підкреслення;
+                                                                              </li>
+                                                                              <li style="text-align: justify;">мають
+                                                                                починатися лише з букви або
+                                                                                підкреслення. Починати ім'я з цифри
+                                                                                заборонено.
+                                                                              </li>
+                                                                            </ul>
+                                                                            <h3 style="text-align: justify;"
+                                                                                id="h-H3_4"><span
+                                                                                style="color: rgb(147, 101, 184);">Динамічна типізація</span>
+                                                                            </h3>
+                                                                            <p style="text-align: justify;">А тепер
+                                                                              введемо код:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no">name = <span
+                                                                                class="hljs-string">"SuperMan"</span>
+<span class="hljs-built_in">print</span>(name)
+name = <span class="hljs-number">50</span>
+<span class="hljs-built_in">print</span>(name)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Запустимо
+                                                                              його (Відео 8):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/2bTxNl6Svtb4HT2zFb3Ai6jQtZMsATYz?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/2bTxNl6Svtb4HT2zFb3Ai6jQtZMsATYz?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <p style="text-align: center;">
+                                                                                                      <span
+                                                                                                          style="color: rgb(209, 213, 216); font-size: 14px;">Відео 8</span>
+                                                                                                    </p>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Значення
+                                                                              змінної <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>name&nbsp;</strong></span>стало
+                                                                              іншим. Але також змінився й тип даних у
+                                                                              ній: замість рядка маємо число.
+                                                                              Пересвідчитись у цьому можна з допомогою
+                                                                              функції <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>type()</strong></span>,
+                                                                              що повертає тип введеного елемента.</p>
+                                                                            <p style="text-align: justify;">Для
+                                                                              отримання інформації передамо змінну name
+                                                                              у функцію <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>type()</strong></span>,
+                                                                              котру передамо до функції <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>print()&nbsp;</strong></span>аби
+                                                                              вивести результат на екран.</p>
+                                                                            <p style="text-align: justify;">Маємо:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no">name = <span
+                                                                                class="hljs-string">"SuperMan"</span>
+<span class="hljs-built_in">print</span>(name)
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(name))
+name = <span class="hljs-number">50</span>
+<span class="hljs-built_in">print</span>(name)
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">type</span>(name))</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Запустимо
+                                                                              код (Відео 9):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/LDC-34sENbJnIAtuESmApx5wP0g-OmRV?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/LDC-34sENbJnIAtuESmApx5wP0g-OmRV?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <p style="text-align: center;">
+                                                                                                      <span
+                                                                                                          style="color: rgb(209, 213, 216); font-size: 14px;">Відео 9</span>
+                                                                                                    </p>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Насправді,
+                                                                              це <strong>одна з основних фіч Python —
+                                                                                динамічна типізація</strong>, тобто
+                                                                              можливість легко переприв'язувати змінну
+                                                                              не тільки до нових даних, а й до нових
+                                                                              типів даних. Але водночас слід пам'ятати
+                                                                              про читабельність коду. Тому назви змінних
+                                                                              мають чітко вказувати на дані, які в них
+                                                                              містяться.</p>
+                                                                            <h3 style="text-align: justify;"
+                                                                                id="h-H3_5"><span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Ввід даних</strong></span>
+                                                                            </h3>
+                                                                            <p style="text-align: justify;">Ми
+                                                                              розібралися з роботою змінних та тим, як
+                                                                              виводити інформацію на консоль. Але часто
+                                                                              постає необхідність у тому, щоб вводити
+                                                                              дані під час роботи програми.</p>
+                                                                            <p style="text-align: justify;">Найпростіший
+                                                                              спосіб це зробити — ввід даних за
+                                                                              допомогою клавіатури та функції <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>input()</strong></span>.
+                                                                              Вона надає можливість присвоювати змінним
+                                                                              значення, які вводить користувач.</p>
+                                                                            <p style="text-align: justify;">Знову
+                                                                              створимо змінну name та присвоїмо їй
+                                                                              функцію <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>input()</strong></span>.
+                                                                              Нижче виведемо її на консоль, але
+                                                                              додатково у функції <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>print()</strong></span>
+                                                                              пояснимо, яку саме змінну ми виводимо. Для
+                                                                              цього, крім самої змінної, введемо елемент
+                                                                              типу рядок, який містить її назву:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no">name = <span
+                                                                                class="hljs-built_in">input</span>()
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"name -"</span>, name)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Запустимо
+                                                                              код, після чого пропишемо ім'я та
+                                                                              натиснемо <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>«Enter»&nbsp;</strong></span><span
+                                                                                  style="color: rgb(0, 0, 0);">(Відео 10)</span>.
+                                                                              Потренуйтеся запускати код, вводячи інші
+                                                                              імена.</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/xHNTUCeNBkqsG4_YheIgsmFHgzl2hUgv?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/xHNTUCeNBkqsG4_YheIgsmFHgzl2hUgv?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <p style="text-align: center;">
+                                                                                                      <span
+                                                                                                          style="color: rgb(209, 213, 216); font-size: 14px;">Відео 10</span>
+                                                                                                    </p>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Але в нашому
+                                                                              коді є недолік. Якщо людина не бачить код
+                                                                              програми, вона не знає, що саме потрібно
+                                                                              вводити.</p>
+                                                                            <p style="text-align: justify;">Щоб це
+                                                                              виправити, усередину функції <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>input(</strong><strong>)</strong></span>
+                                                                              можна вставити рядок, який буде пояснювати
+                                                                              користувачу, що саме йому треба зробити.
+                                                                              Покращимо код, вставивши рядок "<span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>Введіть ім'я супергероя</strong></span>":
+                                                                            </p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no">name = <span
+                                                                                class="hljs-built_in">input</span>(<span
+                                                                                class="hljs-string">"Введіть ім'я супергероя"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"name -"</span>, name)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Знайомство з PYTHON __ Урок 1_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Запустимо
+                                                                              його (Відео 11):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/WVStlFTSLl9lYum06YfNQeXqn_K-cGaO?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/WVStlFTSLl9lYum06YfNQeXqn_K-cGaO?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <p style="text-align: center;">
+                                                                                                      <span
+                                                                                                          style="color: rgb(209, 213, 216); font-size: 14px;">Відео 11</span>
+                                                                                                    </p>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;"><strong>Тепер
+                                                                              будь-хто зможе працювати з нашою
+                                                                              програмою!</strong></p>
+                                                                            <p style="text-align: justify;"><strong>У
+                                                                              цьому уроці ми розібралися, як працювати з
+                                                                              сервісом <span
+                                                                                  style="color: rgb(147, 101, 184);">repl.it</span>
+                                                                              та почали знайомство з Python. Створили
+                                                                              свої перші програми, зробили їх
+                                                                              універсальними й зрозумілими.</strong></p>
+                                                                            <p style="text-align: justify;"><strong>На
+                                                                              наступних заняттях нас чекають нові та ще
+                                                                              більш захопливі можливості
+                                                                              Python!</strong></p>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--<script src="./Знайомство з PYTHON __ Урок 1_files/jquery-3.3.1.min.js"></script>-->
+<!--<script src="./Знайомство з PYTHON __ Урок 1_files/script.js"></script>-->
+
+
+</body>
+</html>

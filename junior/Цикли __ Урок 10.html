@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Цикли :: Урок 10</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="./Цикли __ Урок 10_files/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Цикли __ Урок 10_files/monokai-sublime.min.css">
+  <link href="./Цикли __ Урок 10_files/css2" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="content">
+    <div class="menu-btn menu-btn--active"></div>
+    <nav id="nav" class="d-flex flex-column flex-shrink-0 p-3 navbar">
+      <ul class="nav_container nav nav-pills flex-column mb-auto">
+        <li><a href="#h-H3_1"
+               class="link_wrap nav-link link-dark link_wrap_H3">Цикл while</a></li>
+        <li><a href="#h-H3_2"
+               class="link_wrap nav-link link-dark link_wrap_H3">Гра «Вгадай число»</a></li>
+      </ul>
+    </nav>
+    <p class="title">Цикли</p>
+  </div>
+</header>
+<main class="page" style="background-color: #FF9C00">
+  <div class="wrap main-active">
+    <div class="fr-wrapper" data-codelang="py">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    <div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>
+                                              <div>
+                                                <div>
+                                                  <div>
+                                                    <div>
+                                                      <div>
+                                                        <div>
+                                                          <div>
+                                                            <div>
+                                                              <div>
+                                                                <div>
+                                                                  <div>
+                                                                    <div>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <h2 style="text-align: justify;"
+                                                                                id="h-H2_0">&nbsp;</h2>
+                                                                            <h1 style="text-align: center;"><span
+                                                                                style="color: rgb(255, 156, 0);">Цикли</span>
+                                                                            </h1>
+                                                                            <p style="text-align: justify;"><strong>Часто
+                                                                              людям доводиться розв'язувати однакові
+                                                                              завдання та повторювати монотонні дії.
+                                                                              Тому такі завдання намагаються
+                                                                              автоматизувати та делегувати машинам, які
+                                                                              краще з цим впораються.</strong>&nbsp;</p>
+                                                                            <p style="text-align: justify;">Це, до речі,
+                                                                              і є одним з головних завдань програмістів,
+                                                                              які у своїй роботі не дуже люблять
+                                                                              повторюватись. Тому <strong>для повторного
+                                                                                виконання блоку коду вони розробили
+                                                                                специфічні конструкції — цикли, у яких
+                                                                                послідовність дій прописується лише один
+                                                                                раз.</strong></p>
+                                                                            <p style="text-align: justify;">Водночас
+                                                                              цикли бувають різні та їх умовно поділяють
+                                                                              на:</p>
+                                                                            <ul>
+                                                                              <li style="text-align: justify;"><strong>цикли
+                                                                                з відомою кількістю повторів (з
+                                                                                параметром)</strong>. Цей різновид
+                                                                                характеризується тим, що вказана
+                                                                                послідовність дій виконається вказану
+                                                                                кількість разів. Наприклад, маємо
+                                                                                завдання підтягтись 20 разів. Тоді, тіло
+                                                                                циклу, яке описує одне підтягування,
+                                                                                буде виконане 20 разів.
+                                                                              </li>
+                                                                              <li style="text-align: justify;"><strong>цикли
+                                                                                з невідомою кількістю повторів (з
+                                                                                умовою).</strong> Для цього циклу,
+                                                                                повторення триватиме доти, доки не буде
+                                                                                виконана умова для виходу з циклу.
+                                                                                Повертаючись до підтягувань, завдання
+                                                                                буде виконуватися, доки не настане
+                                                                                втома.
+                                                                              </li>
+                                                                            </ul>
+                                                                            <p style="text-align: justify;"><strong>Але
+                                                                              зауважте, будь-який цикл можна перетворити
+                                                                              як на цикл із параметром, так і на умовний
+                                                                              цикл.</strong></p>
+                                                                            <h3 style="text-align: justify;"
+                                                                                id="h-H3_1"><span
+                                                                                style="color: rgb(147, 101, 184);">Цикл while</span>
+                                                                            </h3>
+                                                                            <p style="text-align: justify;">Оскільки на
+                                                                              попередніх заняттях були розкриті умовні
+                                                                              конструкції, <strong>знайомство з циклами
+                                                                                почнемо з умовного циклу <span
+                                                                                    style="color: rgb(147, 101, 184);">while</span></strong>.
+                                                                              Загальна структура циклу виглядає таким
+                                                                              чином:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no"><span
+                                                                                class="hljs-keyword">while</span> [умова]:
+    [код]</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Запишемо
+                                                                              приклад, що демонструє роботу циклу:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no">var_1 = <span
+                                                                                class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> var_1 &lt; <span class="hljs-number">5</span>:
+    var_1+=<span class="hljs-number">1</span>
+    <span class="hljs-built_in">print</span>(var_1)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Маємо (відео
+                                                                              1):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/7ilne0eIzNXSUkwhaN8C25Db-cutjAUR?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/7ilne0eIzNXSUkwhaN8C25Db-cutjAUR?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <p style="text-align: center;"><span
+                                                                                style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 1</span>
+                                                                            </p>
+                                                                            <p style="text-align: justify;">Розглянемо
+                                                                              роботу програми:</p>
+                                                                            <ul>
+                                                                              <li style="text-align: justify;">Спершу
+                                                                                створили змінну <span
+                                                                                    style="color: rgb(147, 101, 184);"><strong>var_1</strong></span>
+                                                                                та присвоїли їй значення нуль.
+                                                                              </li>
+                                                                              <li style="text-align: justify;">
+                                                                                Починається цикл, у якому вказується
+                                                                                умова, за якої <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>var_1</strong></span>
+                                                                                має бути менше ніж 5, щоби він
+                                                                                виконався.
+                                                                              </li>
+                                                                              <li style="text-align: justify;">Оскільки
+                                                                                на цьому етапі змінна має нульове
+                                                                                значення, цикл починає свою роботу.
+                                                                              </li>
+                                                                              <li style="text-align: justify;">
+                                                                                Виконується цикл, у якому змінна
+                                                                                збільшується на одиницю та виводиться на
+                                                                                екран.
+                                                                              </li>
+                                                                              <li style="text-align: justify;">Оскільки
+                                                                                умова для циклу виконується й далі, він
+                                                                                продовжує працювати.
+                                                                              </li>
+                                                                              <li style="text-align: justify;">Коли тіло
+                                                                                циклу виконалося знову, а <span
+                                                                                    style="color: rgb(147, 101, 184);"><strong>var_1</strong></span>
+                                                                                стала дорівнювати 5, умова перестала
+                                                                                виконуватись і цикл завершив свою
+                                                                                роботу.
+                                                                              </li>
+                                                                            </ul>
+                                                                            <p style="text-align: justify;">Зрозумівши,
+                                                                              як працює цикл, не будемо зупинятись і
+                                                                              виведемо кожен елемент списку на
+                                                                              екран:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no">i=<span
+                                                                                class="hljs-number">0</span>
+list_1 = [<span class="hljs-string">"Macbook"</span>, <span class="hljs-string">"Iphone"</span>, <span
+                                                                                  class="hljs-string">"Tesla"</span>, <span
+                                                                                  class="hljs-string">"Space X"</span>, <span
+                                                                                  class="hljs-string">"noodle"</span>]
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-built_in">len</span>(list_1):
+    <span class="hljs-built_in">print</span>(list_1[i])
+    i+=<span class="hljs-number">1</span></pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Отримаємо
+                                                                              (відео 2):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/u6LjYeYH-_B_opzfV2U-vRqSy7f6xl7z?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/u6LjYeYH-_B_opzfV2U-vRqSy7f6xl7z?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <p style="text-align: center;">
+                                                                                                                        <span
+                                                                                                                            style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 2</span>
+                                                                                                                      </p>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Якщо вивели
+                                                                              на екран кожен з елементів, то можна їх
+                                                                              модифікувати:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no">i=<span
+                                                                                class="hljs-number">0</span>
+list_1 = [<span class="hljs-string">"Macbook"</span>, <span class="hljs-string">"Iphone"</span>, <span
+                                                                                  class="hljs-string">"Tesla"</span>, <span
+                                                                                  class="hljs-string">"Space X"</span>, <span
+                                                                                  class="hljs-string">"noodle"</span>]
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-built_in">len</span>(list_1):
+    list_1[i]= list_1[i]+<span class="hljs-string">" - "</span>+ <span class="hljs-built_in">input</span>(list_1[i]+<span
+                                                                                  class="hljs-string">" "</span>)
+    i+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(list_1)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Маємо (відео
+                                                                              3):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/lRLuznuY5w7ZAozp8AI4jIyGl-7m2t1Z?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/lRLuznuY5w7ZAozp8AI4jIyGl-7m2t1Z?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <p style="text-align: center;">
+                                                                                                                        <span
+                                                                                                                            style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 3</span>
+                                                                                                                      </p>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Але умову
+                                                                              треба роботи такою, щоби рано чи пізно
+                                                                              вона виконалась, інакше цикл стане
+                                                                              нескінченним.</p>
+                                                                            <p style="text-align: justify;">
+                                                                              Наприклад:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no">i=<span
+                                                                                class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">5</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"infinity "</span>)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Отримаємо
+                                                                              (відео 4):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/4cASW0sm_qV99O-u6PEyBrShW_LO9MaN?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/4cASW0sm_qV99O-u6PEyBrShW_LO9MaN?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <p style="text-align: center;">
+                                                                                                                        <span
+                                                                                                                            style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 4</span>
+                                                                                                                      </p>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Як бачимо, у
+                                                                              цьому випадку доводиться вручну зупиняти
+                                                                              програму, бо вона буде нескінченно
+                                                                              працювати. Але нескінченний цикл
+                                                                              використовується й дуже корисний для
+                                                                              певних завдань. Зупинити роботу будь-якого
+                                                                              циклу можна використанням оператора <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>break</strong></span>.
+                                                                              Використаємо його для зупинки нашої
+                                                                              «нескінченності»:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no">i=<span
+                                                                                class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">5</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"infinity "</span>)
+    <span class="hljs-keyword">break</span></pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Результат
+                                                                              (відео 5):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/NDk85PRkVSkVOZN1tsvSUQu1AcMw7E1f?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/NDk85PRkVSkVOZN1tsvSUQu1AcMw7E1f?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <p style="text-align: center;">
+                                                                                                                        <span
+                                                                                                                            style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 5</span>
+                                                                                                                      </p>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">А тепер,
+                                                                              скористаємося нескінченним циклом для
+                                                                              пошуку елементу всередині списку. <strong>Зверніть
+                                                                                увагу</strong>, зазвичай нескінченний
+                                                                              цикл оголошують записами <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>"while True:"</strong></span>
+                                                                              або <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>"while 1:"</strong></span>:
+                                                                            </p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                translate="no"
+                                                                                class="language-py hljs language-python">i=<span
+                                                                                class="hljs-number">0</span>
+list_1 = [<span class="hljs-string">"Macbook"</span>, <span class="hljs-string">"Iphone"</span>, <span
+                                                                                  class="hljs-string">"Tesla"</span>, <span
+                                                                                  class="hljs-string">"Space X"</span>, <span
+                                                                                  class="hljs-string">"noodle"</span>]
+<span class="hljs-keyword">while</span> <span class="hljs-number">1</span>:
+    <span class="hljs-built_in">print</span>(list_1[i])
+    <span class="hljs-keyword">if</span> list_1[i] == <span class="hljs-string">"Tesla"</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Hooray! Tesla!"</span>)
+        <span class="hljs-keyword">break</span>
+    i+=<span class="hljs-number">1</span></pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Маємо (відео
+                                                                              6):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/4Ltuk3YvLMNYHp3ZCMsb47F7mZQFTyQX?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/4Ltuk3YvLMNYHp3ZCMsb47F7mZQFTyQX?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <p style="text-align: center;">
+                                                                                                                        <span
+                                                                                                                            style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 6</span>
+                                                                                                                      </p>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Звісно,
+                                                                              варто пам'ятати, що за відсутності
+                                                                              шуканого елементу, циклі далі працював би
+                                                                              нескінченно або до помилки. Тому додамо
+                                                                              умову — «запобіжник», який дасть змогу
+                                                                              цього уникнути:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                translate="no"
+                                                                                class="language-py hljs language-python">i=<span
+                                                                                class="hljs-number">0</span>
+list_1 = [<span class="hljs-string">"Macbook"</span>,<span class="hljs-string">"Iphone"</span>, <span
+                                                                                  class="hljs-string">"Tesla"</span>, <span
+                                                                                  class="hljs-string">"Space X"</span>, <span
+                                                                                  class="hljs-string">"noodle"</span>]
+<span class="hljs-keyword">while</span> <span class="hljs-number">1</span>:
+    <span class="hljs-built_in">print</span>(list_1[i])
+    <span class="hljs-keyword">if</span> list_1[i] == <span class="hljs-string">"Tesla"</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Hooray! Tesla!"</span>)
+        <span class="hljs-keyword">break</span>
+    <span class="hljs-keyword">if</span> i == <span class="hljs-built_in">len</span>(list_1)-<span
+                                                                                  class="hljs-number">1</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"The fuse went off"</span>)
+        <span class="hljs-keyword">break</span>
+    i+=<span class="hljs-number">1</span></pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Маємо (відео
+                                                                              7):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/cM3cYzriGDp8HgASwD54G-wop2nBCT_c?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/cM3cYzriGDp8HgASwD54G-wop2nBCT_c?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <p style="text-align: center;">
+                                                                                                                        <span
+                                                                                                                            style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 7</span>
+                                                                                                                      </p>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">А тепер
+                                                                              змінимо шуканий рядок <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>"Tesla"</strong></span>
+                                                                              на рядок, що не існує у списку, <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>"Android</strong></span>"
+                                                                              й запустимо програму (відео 8):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/sIttJqPqeFBH8dyxkO5khxwvI83P5kqi?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/sIttJqPqeFBH8dyxkO5khxwvI83P5kqi?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <p style="text-align: center;">
+                                                                                                                        <span
+                                                                                                                            style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 8</span>
+                                                                                                                      </p>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Як бачимо,
+                                                                              «запобіжник» відпрацював і врятував
+                                                                              програму, тому не забувайте додавати його
+                                                                              під час роботи з нескінченними
+                                                                              циклами.</p>
+                                                                            <h3 style="text-align: justify;"
+                                                                                id="h-H3_2"><span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Гра «Вгадай число»</strong></span>
+                                                                            </h3>
+                                                                            <p style="text-align: justify;"><strong>Час
+                                                                              використати набуті знання для створення
+                                                                              власної гри.&nbsp;</strong></p>
+                                                                            <p style="text-align: justify;">Як видно з
+                                                                              назви, користувач має вгадати загадане
+                                                                              комп'ютером число. В іншому випадку,
+                                                                              необхідно надати підказку, введене ним
+                                                                              число більше чи менше від загаданого. Коли
+                                                                              користувач вгадує число, необхідно
+                                                                              привітати його з перемогою і вказати
+                                                                              кількість затрачених спроб.</p>
+                                                                            <p style="text-align: center;"><span
+                                                                                class="fr-img-caption back-process fr-dib"
+                                                                                style="width: 676px;"><span
+                                                                                class="fr-img-wrap"><div
+                                                                                class="img-block"><img
+                                                                                src="./Цикли __ Урок 10_files/image3.jpg"
+                                                                                alt="cpx3Oz1s1wQ5GlOpBhrjxeMLGH_6oZQx"
+                                                                                class="back-process fr-dib"
+                                                                                id="img2"></div><span class="fr-inner">Малюнок 1</span></span></span>
+                                                                            </p>
+                                                                            <p style="text-align: justify;"><strong>Технічне
+                                                                              завдання отримано, тож приступимо до
+                                                                              розробки.</strong>&nbsp;</p>
+                                                                            <p style="text-align: justify;">Оскільки
+                                                                              комп'ютер має загадати число, воно має
+                                                                              бути випадковим, тому імпортуємо модуль
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>random&nbsp;</strong></span>й
+                                                                              функцію <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>randint()</strong></span>.
+                                                                              Виведемо на екран рядки <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>«"-------Guess my number-------"»</strong></span>,
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>«"You need to guess the number picked by enigmatic computer!"»</strong></span>
+                                                                              та <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>«"Number is in range from 1 to 10"»</strong></span>,
+                                                                              щоби сповістити користувача про запущену
+                                                                              програму та його завдання. Створимо
+                                                                              змінну, яка буде зберігати інформацію про
+                                                                              загадане число:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no"><span
+                                                                                class="hljs-keyword">import</span> random
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"-------Guess my number-------"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"You need to guess the number picked by enigmatic computer!"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Number is in range from 1 to 10"</span>)
+magic_number = random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Додамо
+                                                                              змінну <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>count</strong></span>,
+                                                                              в якій буде зберігатися рахунок гри:</p>
+                                                                            <div class="pre-wrapper">
+                                                                              <pre class="language-python hljs"
+                                                                                   translate="no">count = <span
+                                                                                  class="hljs-number">0</span></pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Час
+                                                                              задуматися про реалізацію алгоритму
+                                                                              програми. Оскільки гра має тривати, доки
+                                                                              користувач не вгадає число, скористаємося
+                                                                              циклом <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>while</strong></span>.
+                                                                              Поки введене число не зрівняється з
+                                                                              загаданим, цикл триватиме. Але в нашому
+                                                                              коді не вистачає змінної, яка б зберігала
+                                                                              число, загадане користувачем. Додамо її:
+                                                                            </p>
+                                                                            <div class="pre-wrapper">
+                                                                              <pre class="language-python hljs"
+                                                                                   translate="no">user_number = <span
+                                                                                  class="hljs-built_in">input</span>()</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Але так у
+                                                                              цій змінній зберігатиметься рядок і з
+                                                                              числом його не порівняти, тому додамо
+                                                                              перетворення на число:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no"><span
+                                                                                class="hljs-keyword">import</span> random
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"-------Guess my number-------"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"You need to guess the number picked by enigmatic computer!"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Number is in range from 1 to 10"</span>)
+magic_number = random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
+count = <span class="hljs-number">0</span>
+user_number = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Тепер треба
+                                                                              додати сам цикл <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>while</strong></span>:
+                                                                            </p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no"><span
+                                                                                class="hljs-keyword">import</span> random
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"-------Guess my number-------"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"You need to guess the number picked by enigmatic computer!"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Number is in range from 1 to 10"</span>)
+magic_number = random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
+count = <span class="hljs-number">0</span>
+user_number = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>())
+<span class="hljs-keyword">while</span> user_number != magic_number:</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Зараз
+                                                                              виходить, що користувач одного разу введе
+                                                                              значення і, якщо не вгадає, цикл
+                                                                              перетвориться на нескінченний. Треба
+                                                                              реалізувати введення числа всередині
+                                                                              циклу, але якщо перенести змінну туди,
+                                                                              виникне помилка, адже умова буде
+                                                                              перевірятися до створення самої змінної.
+                                                                              Але є вихід - оголосити змінну і присвоїти
+                                                                              їй нульове значення до циклу. А вже в
+                                                                              самому циклі користувач буде вводити
+                                                                              значення<a
+                                                                                  href="http://onlinecorrector.com.ua/%D0%B7%D0%B4%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8-%D0%B4%D1%96%D1%81%D1%82%D0%B0%D0%B2%D0%B0%D1%82%D0%B8-%D0%BD%D0%B0%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8">:</a>
+                                                                            </p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                class="language-python hljs"
+                                                                                translate="no"><span
+                                                                                class="hljs-keyword">import</span> random
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"-------Guess my number-------"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"You need to guess the number picked by enigmatic computer!"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Number is in range from 1 to 10"</span>)
+magic_number = random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
+count = <span class="hljs-number">0</span>
+user_number = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> user_number != magic_number:
+    user_number = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                                  class="hljs-string">"Your number: "</span>))</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Оскільки на
+                                                                              цьому етапі користувач ввів число, треба
+                                                                              додати спробу до рахунку:</p>
+                                                                            <div class="pre-wrapper">
+                                                                              <pre class="language-python hljs"
+                                                                                   translate="no">count+=<span
+                                                                                  class="hljs-number">1</span></pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Додамо
+                                                                              підказки:</p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                translate="no"
+                                                                                class="language-py hljs language-python"><span
+                                                                                class="hljs-keyword">import</span> random
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"-------Guess my number-------"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"You need to guess the number picked by enigmatic computer!"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Number is in range from 1 to 10"</span>)
+magic_number = random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
+count = <span class="hljs-number">0</span>
+user_number = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> user_number != magic_number:
+    user_number = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                                  class="hljs-string">"Your number: "</span>))
+    count+=<span class="hljs-number">1</span>
+    <span class="hljs-keyword">if</span> magic_number &gt; user_number:
+        <span
+            class="hljs-built_in">print</span>(<span class="hljs-string">"The magic number is greater than yours!"</span>)
+    <span class="hljs-keyword">elif</span> magic_number &lt; user_number:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"The magic number is less than yours!"</span>)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;">Програма
+                                                                              майже готова, лишається вивести на екран
+                                                                              результат гри.</p>
+                                                                            <p style="text-align: justify;"><strong>Готовий
+                                                                              код:</strong></p>
+                                                                            <div class="pre-wrapper"><pre
+                                                                                style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                translate="no"
+                                                                                class="language-py hljs language-python"><span
+                                                                                class="hljs-keyword">import</span> random
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"-------Guess my number-------"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"You need to guess the number picked by enigmatic computer!"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Number is in range from 1 to 10"</span>)
+magic_number = random.randint(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>)
+count = <span class="hljs-number">0</span>
+user_number = <span class="hljs-number">0</span>
+<span class="hljs-keyword">while</span> user_number != magic_number:
+    user_number = <span class="hljs-built_in">int</span>(<span class="hljs-built_in">input</span>(<span
+                                                                                  class="hljs-string">"Your number: "</span>))
+    count+=<span class="hljs-number">1</span>
+    <span class="hljs-keyword">if</span> magic_number &gt; user_number:
+        <span
+            class="hljs-built_in">print</span>(<span class="hljs-string">"The magic number is greater than yours!"</span>)
+    <span class="hljs-keyword">elif</span> magic_number &lt; user_number:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"The magic number is less than yours!"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"You Win! You guessed it on the"</span>, count, <span
+                                                                                  class="hljs-string">"try"</span>)</pre>
+                                                                              <a class="clipboard"
+                                                                                 title="Copy to clipboard"><img
+                                                                                  class="clipboard-icon"
+                                                                                  src="./Цикли __ Урок 10_files/copy-svgrepo-com.svg"></a>
+                                                                            </div>
+                                                                            <p style="text-align: justify;"><strong>Зіграємо&nbsp;</strong>(відео
+                                                                              9):</p>
+                                                                            <span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                class="fr-draggable" controls=""
+                                                                                src="https://fsx1.itstep.org/api/v1/files/Kf3k7s7dHitTCFUXPsqzynB3g-WH9aoP?inline"
+                                                                                poster="https://fsx1.itstep.org/api/v1/files/Kf3k7s7dHitTCFUXPsqzynB3g-WH9aoP?inline=&amp;f=webp"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <p style="text-align: center;">
+                                                                                                                        <span
+                                                                                                                            style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 9</span>
+                                                                                                                      </p>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                            <p style="text-align: justify;"><strong
+                                                                                style="font-weight: 700; color: rgb(63, 63, 64); font-family: Inter, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: justify; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">Сьогодні
+                                                                              ми познайомилися з циклами, а конкретно з
+                                                                              умовним циклом <span
+                                                                                  style="color: rgb(147, 101, 184);">while</span>.
+                                                                              Дізнались, як працювати з ним та
+                                                                              вберегтися від нескінченного циклу або ж
+                                                                              використати його у своїх цілях, що
+                                                                              продемонстрували під час створення власної
+                                                                              гри, що захоплює.</strong></p>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--<script type="text/javascript" id="www-widgetapi-script" src="./Цикли __ Урок 10_files/www-widgetapi.js"-->
+<!--        async=""></script>-->
+<!--<script src="./Цикли __ Урок 10_files/iframe_api"></script>-->
+<!--<script src="./Цикли __ Урок 10_files/jquery-3.3.1.min.js"></script>-->
+<!--<script src="./Цикли __ Урок 10_files/script.js"></script>-->
+
+
+</body>
+</html>

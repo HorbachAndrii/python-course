@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Черепашкова графіка :: Урок 2</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="./Черепашкова графіка __ Урок 2_files/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Черепашкова графіка __ Урок 2_files/monokai-sublime.min.css">
+  <link href="./Черепашкова графіка __ Урок 2_files/css2" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="content">
+    <div class="menu-btn menu-btn--active"></div>
+    <nav id="nav" class="d-flex flex-column flex-shrink-0 p-3 navbar">
+      <ul class="nav_container nav nav-pills flex-column mb-auto">
+        <li><a href="#h-H3_1"
+               class="link_wrap nav-link link-dark link_wrap_H3">Фігури</a></li>
+        <li><a href="#h-H3_2"
+               class="link_wrap nav-link link-dark link_wrap_H3">Малюємо прямокутник</a></li>
+        <li><a href="#h-H3_3"
+               class="link_wrap nav-link link-dark link_wrap_H3">Рисуємо коло</a></li>
+      </ul>
+    </nav>
+    <p class="title">Черепашкова графіка</p>
+  </div>
+</header>
+<main class="page" style="background-color: #FF9C00">
+  <div class="wrap main-active">
+    <div class="fr-wrapper" data-codelang="py">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    <div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>
+                                              <div>
+                                                <div>
+                                                  <div>
+                                                    <div>
+                                                      <div>
+                                                        <div>
+                                                          <div>
+                                                            <div>
+                                                              <div>
+                                                                <div>
+                                                                  <div>
+                                                                    <div>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <h2 style="text-align: justify;"
+                                                                                                  id="h-H2_0">
+                                                                                                &nbsp;</h2>
+                                                                                              <h1 style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(255, 156, 0);">Черепашкова графіка</span>
+                                                                                              </h1>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Розглянемо як
+                                                                                                  Python працює з
+                                                                                                  графікою.</strong></p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Для цього створимо новий
+                                                                                                проєкт, з назвою <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>Turtle&nbsp;</strong></span>(<strong>черепашка</strong>),
+                                                                                                а як мову програмування
+                                                                                                треба обрати <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>Python&nbsp;</strong><strong>(with Turtle)</strong></span>
+                                                                                                (відео 1):&nbsp;</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/Y_EU6o9ni3ahqhTeZvorofhBWNaEpH_Z?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/Y_EU6o9ni3ahqhTeZvorofhBWNaEpH_Z?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 1</span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Інтерфейс відрізняється
+                                                                                                лише тим, що у верхньому
+                                                                                                правому куті з'явилося
+                                                                                                додаткове вікно, де й
+                                                                                                буде розміщена графіка
+                                                                                                (мал. 1):</p>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    class="fr-img-caption back-process fr-fic fr-dii"
+                                                                                                    style="width: 676px;"><span
+                                                                                                    class="fr-img-wrap"><div
+                                                                                                    class="img-block"><img
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/image10.png"
+                                                                                                    alt="N8EzRItZXCrr3F7RhzAli5Kz8GuwHLOC"
+                                                                                                    class="back-process fr-fic fr-dii"
+                                                                                                    id="img2"></div><span
+                                                                                                    class="fr-inner">Малюнок 1</span></span></span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Пропишемо:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no"><span
+                                                                                                  class="hljs-keyword">import</span> turtle
+turtle.shape(<span class="hljs-string">"turtle"</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Запустимо його. У
+                                                                                                верхньому правому куті
+                                                                                                побачимо (мал. 2):</p>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    class="fr-img-caption back-process fr-fic fr-dii"
+                                                                                                    style="width: 191px;"><span
+                                                                                                    class="fr-img-wrap"><div
+                                                                                                    class="img-block"><img
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/image9.png"
+                                                                                                    alt="KzQ5UUEjCe5ErDqQ1SunsfPBaTiERk3R"
+                                                                                                    class="back-process fr-fic fr-dii"
+                                                                                                    id="img3"></div><span
+                                                                                                    class="fr-inner">Малюнок 2</span></span></span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>У нас з'явилася
+                                                                                                  черепашка. А тепер
+                                                                                                  розберемося, як саме
+                                                                                                  ці два чарівні рядки
+                                                                                                  намалювали нам
+                                                                                                  її?</strong> У першому
+                                                                                                рядку ми імпортували
+                                                                                                модуль (файл) з назвою
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>turtle</strong></span>,
+                                                                                                тобто залучили його до
+                                                                                                нашого проєкту. Але
+                                                                                                часто модулі групуються
+                                                                                                та об'єднуються в
+                                                                                                бібліотеки, тобто
+                                                                                                <strong>бібліотеки — це
+                                                                                                  набір модулів</strong>
+                                                                                                (файлова збірка). Вони,
+                                                                                                як і модулі, допомагають
+                                                                                                проводити операції з
+                                                                                                даними. Аби краще
+                                                                                                зрозуміти сенс
+                                                                                                бібліотек, уявимо
+                                                                                                життєву ситуацію: у вас
+                                                                                                зламалася машина.
+                                                                                                Звичайно, вам хочеться
+                                                                                                її відремонтувати, і ви
+                                                                                                можете це зробити, але
+                                                                                                для цього необхідно мати
+                                                                                                інструменти та знання.
+                                                                                                Отже, вам знадобиться
+                                                                                                багато часу, аби
+                                                                                                розв'язати цю задачу.
+                                                                                                Розуміючи це, ви
+                                                                                                звертаєтесь на СТО, де
+                                                                                                це питання буде вирішене
+                                                                                                набагато швидше. Так
+                                                                                                само й
+                                                                                                бібліотекиспрощують
+                                                                                                процес написання коду.
+                                                                                                Цей інструмент,
+                                                                                                результат діяльності
+                                                                                                інших програмістів, які
+                                                                                                вже стикалися з
+                                                                                                подібними питаннями, і
+                                                                                                вирішили їх, зробивши
+                                                                                                так, щоби наступний, хто
+                                                                                                стикнеться з цим, не
+                                                                                                "вигадував велосипед".
+                                                                                                Саме це йдає змогу
+                                                                                                писати програми в
+                                                                                                декілька рядків. Зовсім
+                                                                                                необов'язково знати про
+                                                                                                всі бібліотеки, адже їх
+                                                                                                дуже багато, для пошуку
+                                                                                                достатньо погуглити.</p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Бібліотеки та
+                                                                                                  модулі бувають
+                                                                                                  вбудованими та
+                                                                                                  зовнішніми.</strong>
+                                                                                                Вбудовані —
+                                                                                                встановлюються разом з
+                                                                                                Python, зовнішні —
+                                                                                                потребують встановлення
+                                                                                                й налаштування.</p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Тепер розглянемо другий
+                                                                                                рядок. У ньому ми
+                                                                                                викликали функцію <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>shape()</strong></span>,
+                                                                                                але оскільки вона
+                                                                                                міститься в модулі <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>turtle</strong></span>,
+                                                                                                необхідно прописати
+                                                                                                назву модуля в назві
+                                                                                                функції, розділивши їх
+                                                                                                крапкою. Якщо модуль
+                                                                                                входить до бібліотеки,
+                                                                                                то її назву треба
+                                                                                                вказувати перед назвою
+                                                                                                модуля, так само
+                                                                                                розділяючи назви
+                                                                                                крапкою. Це можна
+                                                                                                порівняти з деревом
+                                                                                                (мал. 3):</p>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    class="fr-img-caption back-process fr-fic fr-dii"
+                                                                                                    style="width: 662px;"><span
+                                                                                                    class="fr-img-wrap"><div
+                                                                                                    class="img-block"><img
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/image12.png"
+                                                                                                    alt="2vb7hU0gW55XuwvblPICUdzk8ug3JOjS"
+                                                                                                    class="back-process fr-fic fr-dii"
+                                                                                                    id="img4"></div><span
+                                                                                                    class="fr-inner">Малюнок 3</span></span></span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Але з модулів можна
+                                                                                                імпортувати не лише
+                                                                                                функції, а й будь-які
+                                                                                                інші дані, які в ньому
+                                                                                                є. Необхідно лише
+                                                                                                правильно вказати їх
+                                                                                                назву та шлях до
+                                                                                                них.</p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Отже, у нашому випадку
+                                                                                                маємо (мал. 4):</p>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    class="fr-img-caption back-process fr-fic fr-dii"
+                                                                                                    style="width: 676px;"><span
+                                                                                                    class="fr-img-wrap"><div
+                                                                                                    class="img-block"><img
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/image11.png"
+                                                                                                    alt="dyxi6Xu55mpzcwwWXZmsevBhSg7k-Je1"
+                                                                                                    class="back-process fr-fic fr-dii"
+                                                                                                    id="img5"></div><span
+                                                                                                    class="fr-inner">Малюнок 4</span></span></span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Але кожного разу
+                                                                                                  прописувати назви
+                                                                                                  модулів і бібліотек
+                                                                                                  незручно. Томує
+                                                                                                  лайфхаки, які значно
+                                                                                                  спрощують цей процес.&nbsp;</strong>Зітремо
+                                                                                                наш код, а на його місці
+                                                                                                пропишемо<a
+                                                                                                  href="http://onlinecorrector.com.ua/%D1%82%D0%B0%D0%BA%D0%B8%D0%B9-%D1%83-%D0%BF%D0%B5%D1%80%D0%B5%D0%BB%D1%96%D0%BA%D1%83">:</a>
+                                                                                              </p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no"><span
+                                                                                                  class="hljs-keyword">from</span> turtle <span
+                                                                                                  class="hljs-keyword">import</span> *
+shape(<span class="hljs-string">"turtle"</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Запустимо його. Як
+                                                                                                видно, результат той
+                                                                                                самий. На відміну від
+                                                                                                попереднього, тут ми
+                                                                                                імпортували не сам
+                                                                                                модуль, а всю інформацію
+                                                                                                (функції й дані), яка в
+                                                                                                ньому міститься. Але
+                                                                                                імпортувати всі дані з
+                                                                                                модуля — не краще
+                                                                                                рішення, адже можна
+                                                                                                ненароком зламати
+                                                                                                власний код, бо назви
+                                                                                                змінних, даних, функцій
+                                                                                                можуть збігтися. Тому,
+                                                                                                оскільки нам потрібна
+                                                                                                лише функція <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>shape(</strong></span>),
+                                                                                                імпортуємо лише її.
+                                                                                                Запишемо<a
+                                                                                                  href="http://onlinecorrector.com.ua/%D1%82%D0%B0%D0%BA%D0%B8%D0%B9-%D1%83-%D0%BF%D0%B5%D1%80%D0%B5%D0%BB%D1%96%D0%BA%D1%83">:</a>
+                                                                                              </p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no"><span
+                                                                                                  class="hljs-keyword">from</span> turtle <span
+                                                                                                  class="hljs-keyword">import</span> shape
+shape(<span class="hljs-string">"turtle"</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Запустивши код, бачимо,
+                                                                                                що результат лишився без
+                                                                                                змін.</p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Тепер у нас є
+                                                                                                  черепашка, і ми знаємо
+                                                                                                  різні способи, як
+                                                                                                  вивести її на екран.
+                                                                                                  Але вона також вміє
+                                                                                                  рухатись, лишаючи
+                                                                                                  слід.</strong> Тому,
+                                                                                                окрім функції <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>shape()</strong></span>,
+                                                                                                імпортуємо функцію <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>forward(</strong><strong>)</strong></span>.
+                                                                                                Для цього достатньо в
+                                                                                                першому рядку дописати
+                                                                                                цю назву, розділивши
+                                                                                                назви функцій комою.
+                                                                                                Маємо:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no"><span
+                                                                                                  class="hljs-keyword">from</span> turtle <span
+                                                                                                  class="hljs-keyword">import</span> shape, forward
+shape(<span class="hljs-string">"turtle"</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Імпорт функції <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>forward()</strong></span>
+                                                                                                ми зробили, тепер
+                                                                                                давайте її використаємо.
+                                                                                                Як аргумент, функція
+                                                                                                приймає кількість
+                                                                                                пікселів, що має пройти
+                                                                                                черепашка. На наступному
+                                                                                                рядку додамо:</p>
+                                                                                              <div class="pre-wrapper">
+                                                                                                <pre
+                                                                                                    class="language-python hljs"
+                                                                                                    translate="no">forward(<span
+                                                                                                    class="hljs-number">150</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Запустимо код (відео
+                                                                                                2):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/n-WS_YXKti5UYuH2s13hHENmCgf3jiny?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/n-WS_YXKti5UYuH2s13hHENmCgf3jiny?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(209, 213, 216); font-size: 14px;">Відео 2&nbsp;</span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Наша черепашка
+                                                                                                намалювала лінію.</p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Зауважимо,
+                                                                                                  імпорти заведено
+                                                                                                  прописувати вгорі
+                                                                                                  файлу. Тоді вони є
+                                                                                                  очевидними й іншим
+                                                                                                  програмістам буде
+                                                                                                  легше налаштувати
+                                                                                                  роботу
+                                                                                                  програми.</strong></p>
+                                                                                              <h3 style="text-align: justify;"
+                                                                                                  id="h-H3_1"><span
+                                                                                                  style="color: rgb(255, 156, 0);">Фігури</span>
+                                                                                              </h3>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Кожна геометрична
+                                                                                                фігура, наприклад,
+                                                                                                квадрат, трикутник або
+                                                                                                коло складається з
+                                                                                                точок, прямих і кривих
+                                                                                                ліній. <strong>Тож
+                                                                                                спробуємо намалювати їх
+                                                                                                із допомогою вже
+                                                                                                знайомого
+                                                                                                модуля</strong> <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>turtle</strong></span>.
+                                                                                                Але працюючи з новою
+                                                                                                бібліотекою або модулем,
+                                                                                                рекомендується почитати
+                                                                                                їхню документацію, адже
+                                                                                                саме там вказано, які
+                                                                                                функції вони можуть
+                                                                                                реалізовувати. <strong>Якщо
+                                                                                                вам цікавий весь
+                                                                                                функціонал нашої
+                                                                                                "черепашки", можете
+                                                                                                ознайомитися з ним за <a
+                                                                                                    href="https://docs.python.org/3.6/library/turtle.html"
+                                                                                                    target="_blank">посиланням</a>.</strong>
+                                                                                              </p>
+                                                                                              <h3 style="text-align: justify;"
+                                                                                                  id="h-H3_2"><span
+                                                                                                  style="color: rgb(255, 156, 0);">Малюємо прямокутник</span>
+                                                                                              </h3>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Отже, наша
+                                                                                                  черепашка може
+                                                                                                  рухатись, залишаючи
+                                                                                                  слід. Цим ми й
+                                                                                                  скористаємось. А
+                                                                                                  першим спробуємо
+                                                                                                  нарисувати
+                                                                                                  прямокутник.</strong>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Ми вже маємо лінію, яка
+                                                                                                й буде першою його
+                                                                                                стороною. Але
+                                                                                                функція<span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>&nbsp;forward()</strong></span>
+                                                                                                лише направляє черепашку
+                                                                                                вперед. Тому для
+                                                                                                рисування прямокутника
+                                                                                                необхідно навчитись її
+                                                                                                повертати.</p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                У цьому нам допоможуть
+                                                                                                методи <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>left()</strong></span>
+                                                                                                і <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>right()</strong></span>.
+                                                                                                Тому змінимо перший
+                                                                                                рядок, включивши ці
+                                                                                                методи до імпорту.</p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Маючи першу сторону
+                                                                                                прямокутника, залишилось
+                                                                                                дорисувати наступні три.
+                                                                                                Оскільки ми знаємо, що в
+                                                                                                прямокутнику всі
+                                                                                                сторониперетинаються під
+                                                                                                прямим кутом, то
+                                                                                                повертати черепашку
+                                                                                                будемо відповідно на 90
+                                                                                                градусів. Для цього
+                                                                                                всередину методу <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>left()</strong></span>
+                                                                                                вставимо значення <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>«90»</strong></span>.
+                                                                                                Тепер знову попросимо
+                                                                                                черепашку пройти вперед,
+                                                                                                але на 100 пікселів уже
+                                                                                                знайомим методом<span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>&nbsp;forward()</strong></span>.
+                                                                                                Отже, наш код
+                                                                                                набувтакого вигляду:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no"><span
+                                                                                                  class="hljs-keyword">from</span> turtle <span
+                                                                                                  class="hljs-keyword">import</span> shape, forward, left, right
+shape(<span class="hljs-string">"turtle"</span>)
+forward(<span class="hljs-number">150</span>)
+left(<span class="hljs-number">90</span>)
+forward(<span class="hljs-number">100</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Запустимо код (відео
+                                                                                                3):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/V7b1CXuSJ0kS9ruQTe-pk4A13iERVRed?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/V7b1CXuSJ0kS9ruQTe-pk4A13iERVRed?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 3</span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Чудово! Тепер ми знаємо
+                                                                                                всі методи, аби
+                                                                                                завершити прямокутник.
+                                                                                                Просто повертаємо
+                                                                                                черепашку ліворуч і
+                                                                                                рухаємо вперед на 150
+                                                                                                пікселів, після чого ще
+                                                                                                раз повертаємо черепашку
+                                                                                                й рухаємо вперед на 100
+                                                                                                пікселів. Готовий код
+                                                                                                буде такий:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no"><span
+                                                                                                  class="hljs-keyword">from</span> turtle <span
+                                                                                                  class="hljs-keyword">import</span> shape, forward, left, right
+shape(<span class="hljs-string">"turtle"</span>)
+forward(<span class="hljs-number">150</span>)
+left(<span class="hljs-number">90</span>)
+forward(<span class="hljs-number">100</span>)
+left(<span class="hljs-number">90</span>)
+forward(<span class="hljs-number">150</span>)
+left(<span class="hljs-number">90</span>)
+forward(<span class="hljs-number">100</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Подивимось, що в нас
+                                                                                                вийшло (відео 4):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/Db7Y6USiMm1WA967Wnr1HScFznoBRVru?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/Db7Y6USiMm1WA967Wnr1HScFznoBRVru?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(209, 213, 216); font-size: 14px;">Відео 4&nbsp;</span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Готово! Ми
+                                                                                                  нарисували прямокутник
+                                                                                                  із допомогою
+                                                                                                  черепашки.</strong>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Цікаво також те, що
+                                                                                                можна змінювати колір,
+                                                                                                яким рисує черепашка,
+                                                                                                колір заливки фігури та
+                                                                                                швидкість руху
+                                                                                                черепашки. Для цього
+                                                                                                використовуються
+                                                                                                методи<span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>&nbsp;color()</strong></span>
+                                                                                                і <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>speed()&nbsp;</strong></span>відповідно.
+                                                                                                Тож імпортуємо їх.</p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                У метод <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>color()</strong></span>
+                                                                                                передаємо рядки з
+                                                                                                назвами кольорів. За
+                                                                                                такої умови перший
+                                                                                                аргумент відповідає за
+                                                                                                колір лінії, другий — за
+                                                                                                колір черепашки. До
+                                                                                                методу <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>speed()</strong></span>
+                                                                                                передаємо швидкість у
+                                                                                                числовому форматі.
+                                                                                                Наприклад:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no">color(<span
+                                                                                                  class="hljs-string">"red"</span>, <span
+                                                                                                  class="hljs-string">"green"</span>)
+speed(<span class="hljs-number">2</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Але будьте
+                                                                                                  обачними, вставити цей
+                                                                                                  код необхідно до
+                                                                                                  команд на рух
+                                                                                                  черепашки.</strong>
+                                                                                                Отже, маємо (відео 5):
+                                                                                              </p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/TJsMSkLcra8TyvjkklFyiaeWm3KNSNgP?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/TJsMSkLcra8TyvjkklFyiaeWm3KNSNgP?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(209, 213, 216); font-size: 14px;">&nbsp;Відео 5</span>
+                                                                                              </p>
+                                                                                              <h3 style="text-align: justify;"
+                                                                                                  id="h-H3_3"><span
+                                                                                                  style="color: rgb(255, 156, 0);">Рисуємо коло</span>
+                                                                                              </h3>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Ми нарисували
+                                                                                                  прямокутник, тож тепер
+                                                                                                  на черзі
+                                                                                                  коло!&nbsp;</strong>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Черепашка досить легко
+                                                                                                може з цим впоратися.
+                                                                                                Для цього достатньо
+                                                                                                скористатися методом
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>circle()</strong></span>,
+                                                                                                у який необхідно
+                                                                                                передати радіус кола в
+                                                                                                пікселях. Але бачимо, що
+                                                                                                рядок імпортів уже
+                                                                                                досить довгий. Оскільки
+                                                                                                наш проєкт поки що
+                                                                                                невеликий, замінимо всі
+                                                                                                назви імпортів уже
+                                                                                                знайомою зірочкою. Тепер
+                                                                                                видалимо частину коду,
+                                                                                                за допомогою якої ми
+                                                                                                рисували прямокутник та
+                                                                                                допишемо:</p>
+                                                                                              <div class="pre-wrapper">
+                                                                                                <pre
+                                                                                                    class="language-python hljs"
+                                                                                                    translate="no">circle(<span
+                                                                                                    class="hljs-number">80</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Після запуску отримуємо
+                                                                                                (відео 6):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/8Lm1afNWDBZrsdGuF1JPbaoNjGBol317?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/8Lm1afNWDBZrsdGuF1JPbaoNjGBol317?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(209, 213, 216);">&nbsp;<span
+                                                                                                    style="font-size: 14px;">Відео 6</span></span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Але як
+                                                                                                  нарисувати окремі
+                                                                                                  фігури?</strong>&nbsp;
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>Turtle&nbsp;</strong></span>має
+                                                                                                ще два цікавих методи —
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>penup()</strong></span>
+                                                                                                і <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>pendown()</strong></span>.
+                                                                                                Вонидають змогу вимикати
+                                                                                                та вмикати слід, який
+                                                                                                залишає за собою
+                                                                                                черепашка. Нарисуємо два
+                                                                                                кола, які перетинаються.
+                                                                                                Для цього рисуємо перше
+                                                                                                коло, вимикаємо слід
+                                                                                                методом <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>penup()</strong></span>,
+                                                                                                після чого переміщуємо
+                                                                                                черепашку на 80 пікселів
+                                                                                                із допомогою <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>forward()</strong></span>,
+                                                                                                вмикаємо слід методом
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>pendown()</strong></span>,
+                                                                                                і рисуємо друге коло.
+                                                                                                Частина коду,
+                                                                                                відповідального за рух
+                                                                                                черепашки, буде такою:
+                                                                                              </p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no">circle(<span
+                                                                                                  class="hljs-number">80</span>)
+penup()
+forward(<span class="hljs-number">80</span>)
+pendown()
+circle(<span class="hljs-number">80</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Черепашкова графіка __ Урок 2_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Виконаємо код (відео
+                                                                                                7).</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/vbNVQVxhD0oPw37Y6GHuRlC-FBOgY5La?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/vbNVQVxhD0oPw37Y6GHuRlC-FBOgY5La?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="font-size: 14px; color: rgb(209, 213, 216);">&nbsp;Відео 7</span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Наостанок, спробуємо
+                                                                                                змінити колір одного з
+                                                                                                наших кіл, заливши його.
+                                                                                                У цьому нам допоможуть
+                                                                                                методи <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>begin_fill()</strong></span>
+                                                                                                та <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>end_fill()</strong></span>.
+                                                                                                Своєю чергою першим ми
+                                                                                                оголошуємо про початок
+                                                                                                заливки фігури, другим —
+                                                                                                про кінець. Звідси
+                                                                                                випливає, що
+                                                                                                розташовувати перший
+                                                                                                метод необхідно до
+                                                                                                початку команд на
+                                                                                                створення фігури, другий
+                                                                                                — після того, як
+                                                                                                черепашка її намалювала.
+                                                                                                Водночас колір заливки
+                                                                                                матиме колір черепашки.
+                                                                                                Додатково змінимо
+                                                                                                товщину лінії,
+                                                                                                скориставшись методом
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>pensize()</strong></span>.
+                                                                                                Всередину методу
+                                                                                                передамо бажану товщину
+                                                                                                лінії в пікселях,
+                                                                                                наприклад, число 5.
+                                                                                                Маємо (відео 8):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/j8GQdSyAKbkPRYI7eCg6kkUauc0gOYZR?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/j8GQdSyAKbkPRYI7eCg6kkUauc0gOYZR?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(209, 213, 216); font-size: 14px;">Відео 8</span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Отже, ми
+                                                                                                  попрацювали з</strong>
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>turtle</strong></span><strong>!
+                                                                                                Навчилися рисувати
+                                                                                                прості фігури.
+                                                                                                Розглянули основні її
+                                                                                                функції й навчились
+                                                                                                імпортувати дані. А на
+                                                                                                наступних заняттях нас
+                                                                                                чекають цікаві та
+                                                                                                видовищні проєкти, які
+                                                                                                ми створимо з допомогою
+                                                                                                цієї потужної мови
+                                                                                                програмування!</strong>
+                                                                                              </p>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--<script type="text/javascript" id="www-widgetapi-script" src="./Черепашкова графіка __ Урок 2_files/www-widgetapi.js"-->
+<!--        async=""></script>-->
+<!--<script src="./Черепашкова графіка __ Урок 2_files/iframe_api"></script>-->
+<!--<script src="./Черепашкова графіка __ Урок 2_files/jquery-3.3.1.min.js"></script>-->
+<!--<script src="./Черепашкова графіка __ Урок 2_files/script.js"></script>-->
+
+
+</body>
+</html>

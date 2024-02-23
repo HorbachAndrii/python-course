@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Урок 9 Конструкція if-else :: Урок 9</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="./Урок 9 Конструкція if-else __ Урок 9_files/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Урок 9 Конструкція if-else __ Урок 9_files/monokai-sublime.min.css">
+  <link href="./Урок 9 Конструкція if-else __ Урок 9_files/css2" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="content">
+    <div class="menu-btn menu-btn--active"></div>
+    <nav id="nav" class="d-flex flex-column flex-shrink-0 p-3 navbar">
+      <ul class="nav_container nav nav-pills flex-column mb-auto">
+        <li><a href="#h-H3_1"
+               class="link_wrap nav-link link-dark link_wrap_H3">Конструкція elif</a></li>
+        <li><a href="#h-H3_2"
+               class="link_wrap nav-link link-dark link_wrap_H3">Чорний список</a></li>
+      </ul>
+    </nav>
+    <p class="title">Урок 9 Конструкція if-else</p>
+  </div>
+</header>
+<main class="page" style="background-color: #FF9C00">
+  <div class="wrap main-active">
+    <div class="fr-wrapper" data-codelang="py">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    <div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>
+                                              <div>
+                                                <div>
+                                                  <div>
+                                                    <div>
+                                                      <div>
+                                                        <div>
+                                                          <div>
+                                                            <div>
+                                                              <div>
+                                                                <div>
+                                                                  <div>
+                                                                    <div>
+                                                                      <div>
+                                                                        <div>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <h2 style="text-align: justify;"
+                                                                                                  id="h-H2_0">
+                                                                                                &nbsp;</h2>
+                                                                                              <h1 style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(255, 156, 0);">Конструкція if-else</span>
+                                                                                              </h1>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Минулого заняття ми
+                                                                                                ознайомилися з
+                                                                                                конструкцією <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>if</strong></span>.
+                                                                                                З її допомогою ми
+                                                                                                ставили умову, за якої
+                                                                                                мав виконатися код
+                                                                                                всередині неї. Якщо ж
+                                                                                                умова не виконувалась,
+                                                                                                програма пропускала код
+                                                                                                і виконувалася далі.
+                                                                                                Звісно, це дуже потужний
+                                                                                                інструмент, <strong>але
+                                                                                                можна продовжити
+                                                                                                конструкцію,
+                                                                                                використавши блок <span
+                                                                                                    style="color: rgb(147, 101, 184);">else</span></strong>.
+                                                                                                З його використанням
+                                                                                                функціонал конструкції
+                                                                                                розшириться і, якщо
+                                                                                                умова не спрацювала,
+                                                                                                буде виконано код
+                                                                                                всередині блоку <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>else</strong></span>.
+                                                                                                Якщо ж умова
+                                                                                                виконається, то
+                                                                                                виконається код
+                                                                                                всередині <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>if</strong></span>,
+                                                                                                а код в <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>else&nbsp;</strong></span>не
+                                                                                                буде залучений.
+                                                                                                Перейдемо до прикладу й
+                                                                                                запишемо:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no">var_1 = <span
+                                                                                                  class="hljs-number">1</span>
+<span class="hljs-keyword">if</span> var_1:
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"var_1 is not empty!"</span>)
+<span class="hljs-keyword">else</span>:
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"var_1 is empty("</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Отримаємо (відео 1):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/kpz5ws4hTsvh_FMaZ0idZA9f9J-2j01K?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/kpz5ws4hTsvh_FMaZ0idZA9f9J-2j01K?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    style="color: rgb(209, 213, 216); font-size: 14px;">Відео 1&nbsp;</span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Зверніть увагу
+                                                                                                  на умову</strong>
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>"if var_1</strong></span>",
+                                                                                                вона аналогічна умові
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>"if var_1 == True"</strong></span>:
+                                                                                              </p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  class="language-python hljs"
+                                                                                                  translate="no">var_1 = <span
+                                                                                                  class="hljs-number">1</span>
+<span class="hljs-keyword">if</span> var_1 == <span class="hljs-literal">True</span>:
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"var_1 is not empty!"</span>)
+<span class="hljs-keyword">else</span>:
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"var_1 is empty("</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Перевіримо (відео
+                                                                                                2):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/lDRGGr745NR6WREW_U7I1PQ4tE2h8aYN?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/lDRGGr745NR6WREW_U7I1PQ4tE2h8aYN?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 2</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Відомо, що будь-яке
+                                                                                                число відмінне від нуля,
+                                                                                                як і інші типи даних, що
+                                                                                                не є пустими,
+                                                                                                еквівалентне <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>True</strong></span>,
+                                                                                                тому умова виконується.
+                                                                                                Коли ж змінна набуває
+                                                                                                нульового значення,
+                                                                                                умова перестає
+                                                                                                виконуватись і
+                                                                                                виконується код
+                                                                                                всередині <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>else</strong></span>.
+                                                                                                Звичайно, цей блок можна
+                                                                                                використати декілька
+                                                                                                разів. Але бажано, щоби
+                                                                                                ступінь вкладеності
+                                                                                                будь-яких блоків коду не
+                                                                                                перевищував трьох. В
+                                                                                                іншому випадку код стає
+                                                                                                значно важче читати.</p>
+                                                                                              <h3 style="text-align: justify;"
+                                                                                                  id="h-H3_1"><span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>Конструкція elif</strong></span>
+                                                                                              </h3>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Імпортуємо модуль <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>random</strong></span>
+                                                                                                з якого візьмемо функцію
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>randint()</strong></span>.
+                                                                                                Вона буде генерувати
+                                                                                                випадкове число від нуля
+                                                                                                до чотирьох, а завдяки
+                                                                                                умовам дізнаємося це
+                                                                                                число:</p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                from random import
+                                                                                                randint</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                                  translate="no"
+                                                                                                  class="language-py hljs language-python"><span
+                                                                                                  class="hljs-keyword">from</span> random <span
+                                                                                                  class="hljs-keyword">import</span> randint
+var_1 = randint(<span class="hljs-number">0</span>,<span class="hljs-number">4</span>)
+res = <span class="hljs-number">0</span>
+<span class="hljs-keyword">if</span> var_1:
+    <span class="hljs-keyword">if</span> var_1 &gt; <span class="hljs-number">2</span>:
+        <span class="hljs-keyword">if</span> var_1 == <span class="hljs-number">3</span>:
+            <span
+                class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 3"</span>)
+            res = <span class="hljs-number">3</span>
+        <span class="hljs-keyword">else</span>:
+            <span
+                class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 4"</span>)
+            res = <span class="hljs-number">4</span>
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-keyword">if</span> var_1 == <span class="hljs-number">1</span>:
+            <span
+                class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 1"</span>)
+            res = <span class="hljs-number">1</span>
+        <span class="hljs-keyword">else</span>:
+            <span
+                class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 2"</span>)
+            res = <span class="hljs-number">2</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 0"</span>)
+    res = <span class="hljs-number">0</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Real value is"</span>, var_1)
+<span class="hljs-keyword">if</span> var_1 == res:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"The condition is correct!"</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"The condition is Incorrect!"</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Результат (відео 3):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/BYUVkiEYVlXoa6mhrwc2TZqL-ZIIDfu-?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/BYUVkiEYVlXoa6mhrwc2TZqL-ZIIDfu-?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 3</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Бачимо, що код дещо
+                                                                                                складний для читання.
+                                                                                                Тому, щоби зробити нашу
+                                                                                                конструкцію
+                                                                                                зрозумілішою,
+                                                                                                використаємо блоки <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>elif</strong></span>,
+                                                                                                які виконуватимуть свій
+                                                                                                блок коду, якщо їхня
+                                                                                                умова задоволена, а
+                                                                                                попередні блоки не
+                                                                                                виконались<a
+                                                                                                  href="http://onlinecorrector.com.ua/%D0%B7%D0%B4%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8-%D0%B4%D1%96%D1%81%D1%82%D0%B0%D0%B2%D0%B0%D1%82%D0%B8-%D0%BD%D0%B0%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8">:</a>
+                                                                                              </p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                                  translate="no"
+                                                                                                  class="language-py hljs language-python"><span
+                                                                                                  class="hljs-keyword">from</span> random <span
+                                                                                                  class="hljs-keyword">import</span> randint
+var_1 = randint(<span class="hljs-number">0</span>,<span class="hljs-number">4</span>)
+res = <span class="hljs-number">0</span>
+<span class="hljs-keyword">if</span> var_1 == <span class="hljs-number">1</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 1"</span>)
+    res = <span class="hljs-number">1</span>
+<span class="hljs-keyword">elif</span> var_1 == <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 2"</span>)
+    res = <span class="hljs-number">2</span>
+<span class="hljs-keyword">elif</span> var_1 == <span class="hljs-number">3</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 3"</span>)
+    res = <span class="hljs-number">3</span>
+<span class="hljs-keyword">elif</span> var_1 == <span class="hljs-number">4</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 4"</span>)
+    res = <span class="hljs-number">4</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"We assume that var_1 is equal to 0"</span>)
+    res = <span class="hljs-number">0</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Real value is"</span>, var_1)
+<span class="hljs-keyword">if</span> var_1 == res:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"The condition is correct!"</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">"The condition is Incorrect!"</span>)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Результат (відео 4):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/iqLc6GkR3jUxsWcvMU3m6TfhHfXqqo__?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/iqLc6GkR3jUxsWcvMU3m6TfhHfXqqo__?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 4</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Можливо, ви запитаєте,
+                                                                                                навіщо використовувати
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>elif</strong></span>,
+                                                                                                якщо можна ще раз
+                                                                                                прописати <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>if</strong></span><span
+                                                                                                  style="color: rgb(0, 0, 0);">?</span>
+                                                                                                Використовуючи новий
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>if</strong></span>
+                                                                                                — починаємо нову
+                                                                                                конструкцію, тому
+                                                                                                наступний <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>else&nbsp;</strong></span>буде
+                                                                                                стосуватися лише його
+                                                                                                (відео 5):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/6inHTPaGDu79XMQGePHweKCIhK_0Land?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/6inHTPaGDu79XMQGePHweKCIhK_0Land?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 5</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Отже, й попередні <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>if</strong></span>
+                                                                                                та <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>elif&nbsp;</strong></span>не
+                                                                                                вплинуть на нього (відео
+                                                                                                6):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/YXojwy_D1uGVGSHeum295LMdn5zwf9r0?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/YXojwy_D1uGVGSHeum295LMdn5zwf9r0?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <p style="text-align: justify;">
+                                                                                              <div class="img-block">
+                                                                                                <img
+                                                                                                    class="fr-fic fr-dii"
+                                                                                                    id="img2"></div>
+                                                                                              </p>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 6</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <h3 style="text-align: justify;"
+                                                                                                  id="h-H3_2"><span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>Чорний список</strong></span>
+                                                                                              </h3>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Усі ми стикалися з
+                                                                                                небажаними контактами та
+                                                                                                спамом. Для розв'язання
+                                                                                                цієї проблемиє функція —
+                                                                                                <strong>чорний
+                                                                                                  список</strong>, куди
+                                                                                                ми їх і відправляємо
+                                                                                                (рис 1)<a
+                                                                                                  href="http://onlinecorrector.com.ua/%D1%97%D1%85-%D1%96-%D1%97%D1%85%D0%BD%D1%96%D0%B9">.</a>&nbsp;
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Давайте разом
+                                                                                                  розробимо цей корисний
+                                                                                                  додаток.</strong></p>
+                                                                                              <p style="text-align: center;">
+                                                                                                <span
+                                                                                                    class="fr-img-caption back-process fr-fic fr-dii"
+                                                                                                    style="width: 676px;"><span
+                                                                                                    class="fr-img-wrap"><div
+                                                                                                    class="img-block"><img
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/image1.png"
+                                                                                                    alt="ZM2WOIf0g_AH_yhFDT4ifJ7dOGXHLwfL"
+                                                                                                    class="back-process fr-fic fr-dii"
+                                                                                                    id="img3"></div><span
+                                                                                                    class="fr-inner">Малюнок 1</span></span></span>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Першим кроком створимо
+                                                                                                словник — телефонну
+                                                                                                книгу:</p>
+                                                                                              <div class="pre-wrapper">
+                                                                                                <pre
+                                                                                                    class="language-python hljs"
+                                                                                                    translate="no">phone_book = {}</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Запишемо в неї кілька
+                                                                                                контактів. Ключем буде
+                                                                                                номер телефону, а
+                                                                                                значенням — ім'я
+                                                                                                контакту<a
+                                                                                                  href="http://onlinecorrector.com.ua/%D0%B7%D0%B4%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8-%D0%B4%D1%96%D1%81%D1%82%D0%B0%D0%B2%D0%B0%D1%82%D0%B8-%D0%BD%D0%B0%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8">:</a>
+                                                                                              </p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                                  translate="no"
+                                                                                                  class="language-py hljs language-python">phone_book = {<span
+                                                                                                  class="hljs-string">"+380568591425"</span> : <span
+                                                                                                  class="hljs-string">"Bank"</span>, <span
+                                                                                                  class="hljs-string">"+12054581022"</span> : <span
+                                                                                                  class="hljs-string">"Ann"</span>,
+             <span class="hljs-string">"+74052153665"</span> : <span class="hljs-string">"Alex"</span>, <span
+                                                                                                    class="hljs-string">"+43056203658"</span> : <span
+                                                                                                    class="hljs-string">"Tony"</span>,
+             <span class="hljs-string">"+12568254053"</span> : <span class="hljs-string">"Nick"</span>, <span
+                                                                                                    class="hljs-string">"+54145251233"</span> : <span
+                                                                                                    class="hljs-string">"Razor"</span>}</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Тепер створимо словник,
+                                                                                                у якому будемо зберігати
+                                                                                                заблоковані номери.
+                                                                                                Додамо:</p>
+                                                                                              <div class="pre-wrapper">
+                                                                                                <pre
+                                                                                                    class="language-python hljs"
+                                                                                                    translate="no">block_list = {}</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Як бачимо, зараз він
+                                                                                                пустий, тому маємо
+                                                                                                наповнити його
+                                                                                                небажаними контактами. У
+                                                                                                цей словник можуть
+                                                                                                потрапити як незнайомі
+                                                                                                номери, так і відомі
+                                                                                                контакти. Враховуючи це
+                                                                                                під час розробки, відомі
+                                                                                                контакти мають братися з
+                                                                                                телефонної книги. Якщо ж
+                                                                                                номер телефону
+                                                                                                незнайомий, значенням
+                                                                                                буде число нуль. Для
+                                                                                                того, щоби записати в
+                                                                                                чорний
+                                                                                                списокнаявнийконтакт,
+                                                                                                дістанемо з телефонної
+                                                                                                книги список номерів
+                                                                                                телефонів. Оскільки вони
+                                                                                                є ключами, скористаємося
+                                                                                                методом<span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>&nbsp;keys(</strong></span>).
+                                                                                                Для наочності, тимчасово
+                                                                                                виведемо список на
+                                                                                                екран:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                                  translate="no"
+                                                                                                  class="language-py hljs language-python">phone_book = {<span
+                                                                                                  class="hljs-string">"+380568591425"</span> : <span
+                                                                                                  class="hljs-string">"Bank"</span>, <span
+                                                                                                  class="hljs-string">"+12054581022"</span> : <span
+                                                                                                  class="hljs-string">"Ann"</span>,
+             <span class="hljs-string">"+74052153665"</span> : <span class="hljs-string">"Alex"</span>, <span
+                                                                                                    class="hljs-string">"+43056203658"</span> : <span
+                                                                                                    class="hljs-string">"Tony"</span>,
+             <span class="hljs-string">"+12568254053"</span> : <span class="hljs-string">"Nick"</span>, <span
+                                                                                                    class="hljs-string">"+54145251233"</span> : <span
+                                                                                                    class="hljs-string">"Razor"</span>}
+
+contact_list = <span class="hljs-built_in">list</span>(phone_book.keys())
+<span class="hljs-built_in">print</span>(contact_list)
+block_list = {}</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Результат (відео 7):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/TE9FJfj4_STZhMm2YIw6Q1_cSriPNhhI?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/TE9FJfj4_STZhMm2YIw6Q1_cSriPNhhI?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 7</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Оберемо із цього списку
+                                                                                                два контакти, які й
+                                                                                                потраплять до чорного
+                                                                                                списку. Запишемо їх в
+                                                                                                окремі змінні:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                                  translate="no"
+                                                                                                  class="language-py hljs language-python">phone_book = {<span
+                                                                                                  class="hljs-string">"+380568591425"</span> : <span
+                                                                                                  class="hljs-string">"Bank"</span>, <span
+                                                                                                  class="hljs-string">"+12054581022"</span> : <span
+                                                                                                  class="hljs-string">"Ann"</span>,
+             <span class="hljs-string">"+74052153665"</span> : <span class="hljs-string">"Alex"</span>, <span
+                                                                                                    class="hljs-string">"+43056203658"</span> : <span
+                                                                                                    class="hljs-string">"Tony"</span>,
+             <span class="hljs-string">"+12568254053"</span> : <span class="hljs-string">"Nick"</span>, <span
+                                                                                                    class="hljs-string">"+54145251233"</span> : <span
+                                                                                                    class="hljs-string">"Razor"</span>}
+
+contact_list = <span class="hljs-built_in">list</span>(phone_book.keys())
+<span class="hljs-built_in">print</span>(contact_list)
+blocked_1 = contact_list[<span class="hljs-number">0</span>]
+blocked_2 = contact_list[-<span class="hljs-number">1</span>]
+<span class="hljs-built_in">print</span>(blocked_1)
+<span class="hljs-built_in">print</span>(blocked_2)
+block_list = {}</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Запустимо код (відео
+                                                                                                8):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/HbL6frWrt5qhFC4B-YwNpjiZwMvjGlSV?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/HbL6frWrt5qhFC4B-YwNpjiZwMvjGlSV?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 8</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Настав час наповнювати
+                                                                                                чорний список. Для цього
+                                                                                                як ключі передамо ці
+                                                                                                змінні. А як значення до
+                                                                                                них візьмемо відповідні
+                                                                                                з телефонної книги.
+                                                                                                Також додамо невідомий
+                                                                                                номер і відповідне йому
+                                                                                                нульове значення<a
+                                                                                                  href="http://onlinecorrector.com.ua/%D0%B7%D0%B4%D0%BE%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8-%D0%B4%D1%96%D1%81%D1%82%D0%B0%D0%B2%D0%B0%D1%82%D0%B8-%D0%BD%D0%B0%D0%B1%D1%83%D0%B2%D0%B0%D1%82%D0%B8">:</a>
+                                                                                              </p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                                  translate="no"
+                                                                                                  class="language-py hljs language-python">phone_book = {<span
+                                                                                                  class="hljs-string">"+380568591425"</span> : <span
+                                                                                                  class="hljs-string">"Bank"</span>, <span
+                                                                                                  class="hljs-string">"+12054581022"</span> : <span
+                                                                                                  class="hljs-string">"Ann"</span>,
+             <span class="hljs-string">"+74052153665"</span> : <span class="hljs-string">"Alex"</span>, <span
+                                                                                                    class="hljs-string">"+43056203658"</span> : <span
+                                                                                                    class="hljs-string">"Tony"</span>,
+             <span class="hljs-string">"+12568254053"</span> : <span class="hljs-string">"Nick"</span>, <span
+                                                                                                    class="hljs-string">"+54145251233"</span> : <span
+                                                                                                    class="hljs-string">"Razor"</span>}
+
+contact_list = <span class="hljs-built_in">list</span>(phone_book.keys())
+blocked_1 = contact_list[<span class="hljs-number">0</span>]
+blocked_2 = contact_list[-<span class="hljs-number">1</span>]
+block_list = {blocked_1 : phone_book[blocked_1], <span class="hljs-string">"+19295894824"</span> : <span
+                                                                                                    class="hljs-number">0</span>,
+              blocked_2 : phone_book[blocked_2]}
+<span class="hljs-built_in">print</span>(block_list)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Запустимо код (відео
+                                                                                                9):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/1IEjosa8RtoJgUEXoaFew3olRTjIsWjF?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/1IEjosa8RtoJgUEXoaFew3olRTjIsWjF?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 9</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Наповнивши чорний
+                                                                                                список, необхідно
+                                                                                                створити генератор
+                                                                                                виклику, щоби перевірити
+                                                                                                роботу додатку. Для
+                                                                                                цього створимо множину,
+                                                                                                яка вміщатиме випадкові
+                                                                                                номери та номери з
+                                                                                                чорного списку:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                                  translate="no"
+                                                                                                  class="language-py hljs language-python">phones = {<span
+                                                                                                  class="hljs-string">"+380568591425"</span>, <span
+                                                                                                  class="hljs-string">"+53145551433"</span>, <span
+                                                                                                  class="hljs-string">"+330568597598"</span>, <span
+                                                                                                  class="hljs-string">"+68952125478"</span>,
+         <span class="hljs-string">"+410500291443"</span>, <span class="hljs-string">"+13145547853"</span>, <span
+                                                                                                    class="hljs-string">"+12054581022"</span>, <span
+                                                                                                    class="hljs-string">"+54145251233"</span>,
+         <span class="hljs-string">"+43056203658"</span>, <span class="hljs-string">"+19295894824"</span>, <span
+                                                                                                    class="hljs-string">"+200568591425"</span>, <span
+                                                                                                    class="hljs-string">"+57632143519"</span>,
+         <span class="hljs-string">"+380568591425"</span>, <span class="hljs-string">"+53145551433"</span>}</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Створимо змінну, в якій
+                                                                                                буде випадковий номер
+                                                                                                телефону. А для
+                                                                                                реалізації випадкового
+                                                                                                дзвінка скористаємось
+                                                                                                методом <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>pop()</strong></span>.
+                                                                                                Також виведемо змінну на
+                                                                                                екран, щоби перевірити
+                                                                                                роботу генератора:</p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                                  translate="no"
+                                                                                                  class="language-py hljs language-python">phone_book = {<span
+                                                                                                  class="hljs-string">"+380568591425"</span> : <span
+                                                                                                  class="hljs-string">"Bank"</span>, <span
+                                                                                                  class="hljs-string">"+12054581022"</span> : <span
+                                                                                                  class="hljs-string">"Ann"</span>,
+             <span class="hljs-string">"+74052153665"</span> : <span class="hljs-string">"Alex"</span>, <span
+                                                                                                    class="hljs-string">"+43056203658"</span> : <span
+                                                                                                    class="hljs-string">"Tony"</span>,
+             <span class="hljs-string">"+12568254053"</span> : <span class="hljs-string">"Nick"</span>, <span
+                                                                                                    class="hljs-string">"+54145251233"</span> : <span
+                                                                                                    class="hljs-string">"Razor"</span>}
+
+contact_list = <span class="hljs-built_in">list</span>(phone_book.keys())
+blocked_1 = contact_list[<span class="hljs-number">0</span>]
+blocked_2 = contact_list[-<span class="hljs-number">1</span>]
+
+block_list = {blocked_1 : phone_book[blocked_1], <span class="hljs-string">"+19295894824"</span> : <span
+                                                                                                    class="hljs-number">0</span>,
+             blocked_2 : phone_book[blocked_2]}
+
+phones = {<span class="hljs-string">"+380568591425"</span>, <span class="hljs-string">"+53145551433"</span>, <span
+                                                                                                    class="hljs-string">"+330568597598"</span>, <span
+                                                                                                    class="hljs-string">"+68952125478"</span>,
+         <span class="hljs-string">"+410500291443"</span>, <span class="hljs-string">"+13145547853"</span>, <span
+                                                                                                    class="hljs-string">"+12054581022"</span>, <span
+                                                                                                    class="hljs-string">"+54145251233"</span>,
+         <span class="hljs-string">"+43056203658"</span>, <span class="hljs-string">"+19295894824"</span>, <span
+                                                                                                    class="hljs-string">"+200568591425"</span>, <span
+                                                                                                    class="hljs-string">"+57632143519"</span>,
+         <span class="hljs-string">"+380568591425"</span>, <span class="hljs-string">"+53145551433"</span>}
+incoming_call = phones.pop()
+<span class="hljs-built_in">print</span>(incoming_call)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Результат роботи
+                                                                                                генератора (відео
+                                                                                                10):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/ew2IDJ7ok9kZ8nmF8LsHGEtNcoI_ItiX?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/ew2IDJ7ok9kZ8nmF8LsHGEtNcoI_ItiX?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 10</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Тепер, маючи вхідний
+                                                                                                дзвінок і список
+                                                                                                блокованих контактів
+                                                                                                необхідно створити
+                                                                                                логіку, яка зіставлятиме
+                                                                                                їх між собою. Якщо номер
+                                                                                                у чорному списку,
+                                                                                                відповімо <span
+                                                                                                  style="color: rgb(147, 101, 184);"><strong>"Вибачте, [ім'я контакту/номер] не сьогодні"</strong></span>.
+                                                                                                Коли ж буде надходити
+                                                                                                дзвінок від інших
+                                                                                                номерів, виведемо напис
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>"Вам дзвінок від [номер телефону/ім'я контакту]"</strong></span>.
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Готовий
+                                                                                                  код:</strong></p>
+                                                                                              <div class="pre-wrapper"><pre
+                                                                                                  style="box-sizing: border-box; padding: 4px 36px 4px 6px; background: rgb(35, 36, 31); color: rgb(248, 248, 242); border-radius: 4px; display: block; font-family: &quot;Fira Code&quot;, monospace; font-size: 14px; font-weight: 400; hyphens: none; line-height: 24px; overflow-x: auto; width: 674.028px; overflow-wrap: break-word !important; white-space: pre !important; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"
+                                                                                                  translate="no"
+                                                                                                  class="language-py hljs language-python">phone_book = {<span
+                                                                                                  class="hljs-string">"+380568591425"</span> : <span
+                                                                                                  class="hljs-string">"Bank"</span>, <span
+                                                                                                  class="hljs-string">"+12054581022"</span> : <span
+                                                                                                  class="hljs-string">"Ann"</span>,
+             <span class="hljs-string">"+74052153665"</span> : <span class="hljs-string">"Alex"</span>, <span
+                                                                                                    class="hljs-string">"+43056203658"</span> : <span
+                                                                                                    class="hljs-string">"Tony"</span>,
+             <span class="hljs-string">"+12568254053"</span> : <span class="hljs-string">"Nick"</span>, <span
+                                                                                                    class="hljs-string">"+54145251233"</span> : <span
+                                                                                                    class="hljs-string">"Razor"</span>}
+
+contact_list = <span class="hljs-built_in">list</span>(phone_book.keys())
+blocked_1 = contact_list[<span class="hljs-number">0</span>]
+blocked_2 = contact_list[-<span class="hljs-number">1</span>]
+
+block_list = {blocked_1 : phone_book[blocked_1], <span class="hljs-string">"+19295894824"</span> : <span
+                                                                                                    class="hljs-number">0</span>,
+             blocked_2 : phone_book[blocked_2]}
+phones = {<span class="hljs-string">"+380568591425"</span>, <span class="hljs-string">"+53145551433"</span>, <span
+                                                                                                    class="hljs-string">"+330568597598"</span>, <span
+                                                                                                    class="hljs-string">"+68952125478"</span>,
+         <span class="hljs-string">"+410500291443"</span>, <span class="hljs-string">"+13145547853"</span>, <span
+                                                                                                    class="hljs-string">"+12054581022"</span>, <span
+                                                                                                    class="hljs-string">"+54145251233"</span>,
+         <span class="hljs-string">"+43056203658"</span>, <span class="hljs-string">"+19295894824"</span>, <span
+                                                                                                    class="hljs-string">"+200568591425"</span>, <span
+                                                                                                    class="hljs-string">"+57632143519"</span>,
+         <span class="hljs-string">"+380568591425"</span>, <span class="hljs-string">"+53145551433"</span>}
+incoming_call = phones.pop()
+    <span class="hljs-keyword">if</span> incoming_call <span class="hljs-keyword">in</span> contact_list:
+        <span class="hljs-keyword">if</span> incoming_call <span class="hljs-keyword">in</span> block_list.keys():
+            <span class="hljs-built_in">print</span>(<span class="hljs-string">"Sorry,"</span>, block_list[incoming_call], <span
+                                                                                                    class="hljs-string">"not today"</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"You call from"</span>, phone_book[incoming_call])
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-keyword">if</span> incoming_call <span class="hljs-keyword">in</span> block_list.keys():
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"Sorry,"</span>, incoming_call, <span
+                                                                                                    class="hljs-string">"not today"</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">"You call from"</span>, incoming_call)</pre>
+                                                                                                <a class="clipboard"
+                                                                                                   title="Copy to clipboard"><img
+                                                                                                    class="clipboard-icon"
+                                                                                                    src="./Урок 9 Конструкція if-else __ Урок 9_files/copy-svgrepo-com.svg"></a>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                Запустимо код і
+                                                                                                впевнимось у коректній
+                                                                                                роботі програми (відео
+                                                                                                11):</p>
+                                                                                              <span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                                                  class="fr-draggable"
+                                                                                                  controls=""
+                                                                                                  src="https://fsx1.itstep.org/api/v1/files/RqU-Ow5_O3dJQm6FmdC8sptwMtwCWS5S?inline"
+                                                                                                  poster="https://fsx1.itstep.org/api/v1/files/RqU-Ow5_O3dJQm6FmdC8sptwMtwCWS5S?inline=&amp;f=webp"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                                                  class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <div>
+                                                                                                                  <div>
+                                                                                                                    <div>
+                                                                                                                      <div>
+                                                                                                                        <div>
+                                                                                                                          <div>
+                                                                                                                            <div>
+                                                                                                                              <div>
+                                                                                                                                <div>
+                                                                                                                                  <div>
+                                                                                                                                    <div>
+                                                                                                                                      <div>
+                                                                                                                                        <div>
+                                                                                                                                          <div>
+                                                                                                                                            <div>
+                                                                                                                                              <div>
+                                                                                                                                                <p style="text-align: center;">
+                                                                                                                                                  <span
+                                                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 11</span>
+                                                                                                                                                </p>
+                                                                                                                                              </div>
+                                                                                                                                            </div>
+                                                                                                                                          </div>
+                                                                                                                                        </div>
+                                                                                                                                      </div>
+                                                                                                                                    </div>
+                                                                                                                                  </div>
+                                                                                                                                </div>
+                                                                                                                              </div>
+                                                                                                                            </div>
+                                                                                                                          </div>
+                                                                                                                        </div>
+                                                                                                                      </div>
+                                                                                                                    </div>
+                                                                                                                  </div>
+                                                                                                                </div>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>Отже, сьогодні
+                                                                                                  ми повністю розглянули
+                                                                                                  умовні конструкції
+                                                                                                  <span
+                                                                                                      style="color: rgb(147, 101, 184);">if</span>,</strong>
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);">elif</span><strong>,</strong>
+                                                                                                <span
+                                                                                                    style="color: rgb(147, 101, 184);"><strong>else</strong></span><strong>,
+                                                                                                а отримані навички
+                                                                                                допомогли в розробці
+                                                                                                чорного
+                                                                                                списку.&nbsp;</strong>
+                                                                                              </p>
+                                                                                              <p style="text-align: justify;">
+                                                                                                <strong>На наступних
+                                                                                                  заняттях дізнаємось
+                                                                                                  про інші потужні
+                                                                                                  можливості
+                                                                                                  Python.</strong></p>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--<script type="text/javascript" id="www-widgetapi-script"-->
+<!--        src="./Урок 9 Конструкція if-else __ Урок 9_files/www-widgetapi.js" async=""></script>-->
+<!--<script src="./Урок 9 Конструкція if-else __ Урок 9_files/iframe_api"></script>-->
+<!--<script src="./Урок 9 Конструкція if-else __ Урок 9_files/jquery-3.3.1.min.js"></script>-->
+<!--<script src="./Урок 9 Конструкція if-else __ Урок 9_files/script.js"></script>-->
+
+
+</body>
+</html>

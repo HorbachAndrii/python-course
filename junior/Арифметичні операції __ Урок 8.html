@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Арифметичні операції :: Урок 8</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="./Арифметичні операції __ Урок 8_files/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Арифметичні операції __ Урок 8_files/monokai-sublime.min.css">
+  <link href="./Арифметичні операції __ Урок 8_files/css2" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="content">
+    <div class="menu-btn menu-btn--active"></div>
+    <nav id="nav" class="d-flex flex-column flex-shrink-0 p-3 navbar">
+      <ul class="nav_container nav nav-pills flex-column mb-auto">
+        <li><a href="#h-H3_1"
+               class="link_wrap nav-link link-dark link_wrap_H3">Умовні операції</a></li>
+        <li><a href="#h-H3_2"
+               class="link_wrap nav-link link-dark link_wrap_H3">Умовна конструкція if</a></li>
+        <li><a href="#h-H3_3"
+               class="link_wrap nav-link link-dark link_wrap_H3">Логічні операції</a></li>
+        <li><a href="#h-H3_4"
+               class="link_wrap nav-link link-dark link_wrap_H3">Розробка «Quiz»</a></li>
+      </ul>
+    </nav>
+    <p class="title">Арифметичні операції</p>
+  </div>
+</header>
+<main class="page" style="background-color: #FF9C00">
+  <div class="wrap main-active">
+    <div class="fr-wrapper" data-codelang="py">
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        <div>
+                          <div>
+                            <div>
+                              <div>
+                                <div>
+                                  <div>
+                                    <div>
+                                      <div>
+                                        <div>
+                                          <div>
+                                            <div>
+                                              <div>
+                                                <div>
+                                                  <div>
+                                                    <div>
+                                                      <div>
+                                                        <div>
+                                                          <div>
+                                                            <div>
+                                                              <div>
+                                                                <div>
+                                                                  <div>
+                                                                    <div>
+                                                                      <div>
+                                                                        <div>
+                                                                          <h2 style="text-align: justify;" id="h-H2_0">
+                                                                            &nbsp;</h2>
+                                                                          <h1 style="text-align: center;"><span
+                                                                              style="color: rgb(255, 156, 0);">Арифметичні операції</span>
+                                                                          </h1>
+                                                                          <p style="text-align: justify;"><strong>Знаючи
+                                                                            типи даних та як їх перетворювати, почнемо
+                                                                            ними оперувати</strong>. З курсу математики
+                                                                            ви знаєте про операції додавання (<span
+                                                                                style="color: rgb(147, 101, 184);"><strong>+</strong></span>),
+                                                                            віднімання (<span
+                                                                                style="color: rgb(147, 101, 184);"><strong>-</strong></span>),
+                                                                            множення (<span
+                                                                                style="color: rgb(147, 101, 184);"><strong>*</strong></span>)
+                                                                            і ділення (<span
+                                                                                style="color: rgb(147, 101, 184);"><strong>/</strong></span>).
+                                                                            Ці операції називають <strong><em>арифметичними</em></strong>.
+                                                                            Окрім вищевказаних, <strong>в Python
+                                                                              доступні такі арифметичні
+                                                                              операції:</strong></p>
+                                                                          <ul>
+                                                                            <li style="text-align: justify;">Піднесення
+                                                                              до степеня (<span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>**</strong></span>)
+                                                                              — множить число саме на себе вказану
+                                                                              кількість разів.
+                                                                            </li>
+                                                                            <li style="text-align: justify;">
+                                                                              Цілочисельне ділення (<span
+                                                                                style="color: rgb(147, 101, 184);"><strong>//</strong></span>)
+                                                                              — ділить одне число на інше, відкидаючи
+                                                                              залишок від ділення
+                                                                            </li>
+                                                                            <li style="text-align: justify;">Залишок від
+                                                                              ділення (<span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>%</strong></span>)
+                                                                              — ділить одне число на інше, залишаючи
+                                                                              лише залишок від ділення
+                                                                            </li>
+                                                                          </ul>
+                                                                          <p style="text-align: justify;">Отримавши
+                                                                            інформацію про операції, відтворимо їх у
+                                                                            коді. Для цього створимо дві змінні зі
+                                                                            значеннями 5 і 2 відповідно, а самі операції
+                                                                            пропишемо всередині функції <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>print()</strong></span>:
+                                                                          </p>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">var_1 = <span
+                                                                              class="hljs-number">5</span>
+var_2 = <span class="hljs-number">2</span>
+<span class="hljs-built_in">print</span>(var_1 + var_2)
+<span class="hljs-built_in">print</span>(var_1 - var_2)
+<span class="hljs-built_in">print</span>(var_1 * var_2)
+<span class="hljs-built_in">print</span>(var_1 / var_2)
+<span class="hljs-built_in">print</span>(var_1 ** var_2)
+<span class="hljs-built_in">print</span>(var_1 // var_2)
+<span class="hljs-built_in">print</span>(var_1 % var_2)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Отримаємо
+                                                                            (відео 1):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/y4fcNZuvHqwwM4vXmN_M8n2Dn2xGLN35?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/y4fcNZuvHqwwM4vXmN_M8n2Dn2xGLN35?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <p style="text-align: center;"><span
+                                                                              style="color: rgb(209, 213, 216); font-size: 14px;">Відео 1&nbsp;</span>
+                                                                          </p>
+                                                                          <p style="text-align: justify;">Але в Python
+                                                                            частину цих операцій можна проводити не
+                                                                            тільки з числами, а й з іншими типами даних.
+                                                                            Ви вже знаєте, що рядки можна додавати та
+                                                                            множити, ці ж операції можна проводити зі
+                                                                            списками й кортежами. Але, як і у випадку з
+                                                                            рядками, множити можна виключно на ціле
+                                                                            число. Запишемо:</p>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">list_1 = [<span
+                                                                              class="hljs-number">1</span>,<span
+                                                                              class="hljs-number">1</span>]
+list_2 = [<span class="hljs-number">2</span>,<span class="hljs-number">2</span>]
+tuple_1 = <span class="hljs-number">3</span>,<span class="hljs-number">3</span>
+tuple_2 = <span class="hljs-number">4</span>,<span class="hljs-number">4</span>
+<span class="hljs-built_in">print</span>(list_1 + list_2)
+<span class="hljs-built_in">print</span>(tuple_1 + tuple_2)
+<span class="hljs-built_in">print</span>(list_1 * <span class="hljs-number">2</span>)
+<span class="hljs-built_in">print</span>(tuple_1 * <span class="hljs-number">2</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Результат
+                                                                            (відео 2):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/AJ_G3r6YUznlUdTISA-1BSjKm-Pi83oE?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/AJ_G3r6YUznlUdTISA-1BSjKm-Pi83oE?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 2</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <h3 style="text-align: justify;" id="h-H3_1">
+                                                                            <span style="color: rgb(147, 101, 184);">Умовні операції</span>
+                                                                          </h3>
+                                                                          <p style="text-align: justify;">Та на
+                                                                            арифметичних операціях функціонал Python не
+                                                                            закінчується. У житті ми постійно стикаємось
+                                                                            із порівняннями, порівнюючи предмети або
+                                                                            вигоду від потенційних рішень. Такі операції
+                                                                            називають
+                                                                            <strong><em>умовними&nbsp;</em></strong>й
+                                                                            вони представлені таким синтаксисом:</p>
+                                                                          <ul>
+                                                                            <li style="text-align: justify;">операнд
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>«&gt;»&nbsp;</strong></span>—
+                                                                              <strong>більше&nbsp;</strong>— повертає
+                                                                              значення <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>True</strong></span>,
+                                                                              якщо елемент зліва від операнда більший за
+                                                                              елемент праворуч. В іншому випадку
+                                                                              повертається <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>False</strong></span>.
+                                                                            </li>
+                                                                            <li style="text-align: justify;">
+                                                                              операнд<span
+                                                                                style="color: rgb(147, 101, 184);"><strong>&nbsp;«&lt;»</strong></span>
+                                                                              — <strong>менше&nbsp;</strong>— повертає
+                                                                              значення <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>True</strong></span>,
+                                                                              якщо елемент справа від операнда більший
+                                                                              за елемент ліворуч. Інакше повертається
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>False</strong></span>.
+                                                                            </li>
+                                                                            <li style="text-align: justify;">операнд
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>«&gt;=»&nbsp;</strong></span>—
+                                                                              <strong>більше або дорівнює</strong> —
+                                                                              працює аналогічно операнду «більше», але
+                                                                              на відміну від нього, за рівності
+                                                                              елементів повертає <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>True</strong></span>.
+                                                                            </li>
+                                                                            <li style="text-align: justify;">операнд
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>«&lt;=»</strong></span>
+                                                                              — <strong>менше або дорівнює</strong> —
+                                                                              працює так само як операнд «менше», але за
+                                                                              рівності елементів повертає <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>True</strong></span>.
+                                                                            </li>
+                                                                            <li style="text-align: justify;">
+                                                                              операнд<span
+                                                                                style="color: rgb(147, 101, 184);"><strong>&nbsp;«==»</strong></span>
+                                                                              — <strong>дорівнює&nbsp;</strong>—
+                                                                              повертає значення <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>True</strong></span>,
+                                                                              якщо елементи праворуч і ліворуч повністю
+                                                                              однакові. В інших випадках повертається
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>False</strong></span>.
+                                                                            </li>
+                                                                            <li style="text-align: justify;">операнд
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>«!=»</strong></span>
+                                                                              — <strong>не дорівнює</strong> — повертає
+                                                                              значення <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>True&nbsp;</strong></span>в
+                                                                              усіх випадках, коли елементи не ідентичні
+                                                                              одне одному.
+                                                                            </li>
+                                                                          </ul>
+                                                                          <p style="text-align: justify;">Порівняємо
+                                                                            числа:</p>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">var_1 = <span
+                                                                              class="hljs-number">2</span>
+var_2 = <span class="hljs-number">1.1</span>
+var_3 = <span class="hljs-number">3</span>
+var_4 = <span class="hljs-number">3</span>
+<span class="hljs-built_in">print</span>(var_1 &gt; var_2)
+<span class="hljs-built_in">print</span>(var_1 &lt; var_2)
+<span class="hljs-built_in">print</span>(var_1 &gt;= var_2)
+<span class="hljs-built_in">print</span>(var_1 &lt;= var_2)
+<span class="hljs-built_in">print</span>(var_3 &gt;= var_4)
+<span class="hljs-built_in">print</span>(var_3 &lt;= var_4)
+<span class="hljs-built_in">print</span>(var_1 != var_2)
+<span class="hljs-built_in">print</span>(var_3 == var_4)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Результат
+                                                                            (відео 3):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/IzixHg9RnIhXXFFS6KhHMsfdGKYMgiKF?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/IzixHg9RnIhXXFFS6KhHMsfdGKYMgiKF?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 3</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <p style="text-align: justify;"><strong>Якщо з
+                                                                            числами все очевидно, то як порівнюються
+                                                                            рядки, списки, кортежі й інші? З ними
+                                                                            ситуація дещо цікавіша.&nbsp;</strong></p>
+                                                                          <p style="text-align: justify;">Порівнюючи
+                                                                            рядки, Python порівнює перші символи. Якщо
+                                                                            вони збігаються, порівнюються наступні аж,
+                                                                            доки не будуть знайдені різні символи. Якщо
+                                                                            ж усі символи будуть однакові, то й рядки
+                                                                            будуть рівними. Кожен символ має своє
+                                                                            числове кодування й, коли Python знаходить
+                                                                            різні знаки, проводиться порівняння цих
+                                                                            числових значень і видається результат
+                                                                            операції. Щоби дізнатися код символу
+                                                                            використовується функція <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>ord()</strong></span>.
+                                                                            Якщо ж навпаки необхідно дізнатися
+                                                                            відповідність числа символу,
+                                                                            використовується функція <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>chr()</strong></span>.&nbsp;
+                                                                          </p>
+                                                                          <p style="text-align: justify;"><strong>Варто
+                                                                            зазначити, що великі й маленькі літери мають
+                                                                            різні коди. Не варто забувати й про те, що в
+                                                                            різних системах можуть використовуватися
+                                                                            різні кодування.&nbsp;</strong></p>
+                                                                          <p style="text-align: justify;">Запишемо:</p>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">str_1 = <span
+                                                                              class="hljs-string">"F"</span>
+str_2 = <span class="hljs-string">"f"</span>
+<span class="hljs-built_in">print</span>(str_1 &lt; str_2)
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">ord</span>(str_1))
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">ord</span>(str_2))
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">chr</span>(<span class="hljs-number">70</span>))
+<span class="hljs-built_in">print</span>(<span class="hljs-built_in">chr</span>(<span
+                                                                                class="hljs-number">102</span>))</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Запустимо код
+                                                                            (відео 4):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/wVw_aDHMvz0DwxhxPM57h4eN_9elxg4C?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/wVw_aDHMvz0DwxhxPM57h4eN_9elxg4C?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 4</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Очевидно, що
+                                                                            70 менше ніж 102, тому й <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>"F"</strong></span>
+                                                                            менша за <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>"f"</strong></span>.
+                                                                          </p>
+                                                                          <p style="text-align: justify;">Під час
+                                                                            порівняння списків, кортежів, множин й <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>frozenset</strong></span>,
+                                                                            усе відбувається аналогічно.&nbsp;</p>
+                                                                          <p style="text-align: justify; margin-left: 20px;">
+                                                                            <strong>Зверніть увагу,&nbsp;</strong>якщо
+                                                                            елементами вищевказаних типів є числа,
+                                                                            рядки, кортежі тощо, то вони мають
+                                                                            порівнюватися, відповідно, з числами,
+                                                                            рядками, кортежами тощо. В іншому випадку
+                                                                            з'явиться помилка<strong>.&nbsp;</strong>
+                                                                          </p>
+                                                                          <p style="text-align: justify;">Але, якщо
+                                                                            порівняння відбулося до виявлення колізії,
+                                                                            помилки не буде (відео 5):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/WJXnr6nJ0ZqbZ7YPn-K5mZYNJ_kRREmE?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/WJXnr6nJ0ZqbZ7YPn-K5mZYNJ_kRREmE?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 5</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <h3 style="text-align: justify;" id="h-H3_2">
+                                                                            <span style="color: rgb(147, 101, 184);">Умовна конструкція if</span>
+                                                                          </h3>
+                                                                          <p style="text-align: justify;"><strong>Крім
+                                                                            прямого використання умовних операцій, їх
+                                                                            часто використовують з умовним
+                                                                            оператором<span
+                                                                                style="color: rgb(147, 101, 184);">&nbsp;if</span>.</strong>&nbsp;
+                                                                          </p>
+                                                                          <p style="text-align: justify;">У самій
+                                                                            конструкції <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>if</strong></span>
+                                                                            задається умова, за якої буде виконано код,
+                                                                            що знаходиться в тілі конструкції. Якщо ж
+                                                                            умова не виконується, то не виконується код
+                                                                            всередині тіла конструкції. Запишемо:</p>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no"><span class="hljs-keyword">if</span> <span
+                                                                              class="hljs-number">1</span>&lt;<span
+                                                                              class="hljs-number">2</span>:
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Really, 1 &lt; 2"</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Запустимо код
+                                                                            (відео 6):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/dH3yD6Ni8Ku_F9GgtoxvpHMZtm-b9Eop?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/dH3yD6Ni8Ku_F9GgtoxvpHMZtm-b9Eop?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 6</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Щоби код
+                                                                            розмістився всередині конструкції, його
+                                                                            необхідно почати з нового рядка й відділити
+                                                                            від початку рядку, один раз натиснувши
+                                                                            клавішу <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Tab</strong></span>.
+                                                                            Конструкція буде продовжуватись, доки код не
+                                                                            буде розміщено без використання табуляції:
+                                                                          </p>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no"><span class="hljs-keyword">if</span> <span
+                                                                              class="hljs-number">1</span>&gt;<span
+                                                                              class="hljs-number">2</span>:
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Really, 1 &gt; 2"</span>)
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"I am Print!"</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Виконаємо код
+                                                                            (відео 7):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/JK7-ePueavBXneVet_m496XixlEsp9TO?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/JK7-ePueavBXneVet_m496XixlEsp9TO?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 7</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Тепер ми
+                                                                            можемо ставити умови для виконання коду.</p>
+                                                                          <h3 style="text-align: justify;" id="h-H3_3">
+                                                                            <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>Логічні операції</strong></span>
+                                                                          </h3>
+                                                                          <p style="text-align: justify;"><strong>Але
+                                                                            часто однієї умови може бути недостатньо,
+                                                                            тоді можна прописувати каскад із конструкцій
+                                                                            <span
+                                                                                style="color: rgb(147, 101, 184);">if</span>,
+                                                                            але значно краще скористатися логічними
+                                                                            операціями, котрі зараз розглянемо.</strong>
+                                                                          </p>
+                                                                          <p style="text-align: justify;">В Python
+                                                                            доступні такі <strong>логічні
+                                                                              операції:</strong></p>
+                                                                          <ul>
+                                                                            <li style="text-align: justify;">Операторand
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>(і)</strong></span>
+                                                                              дає змогу об'єднувати умови й код
+                                                                              виконається тільки, коли всі умови будуть
+                                                                              виконані:
+                                                                            </li>
+                                                                          </ul>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-javascript hljs"
+                                                                              translate="no">var_1 = <span
+                                                                              class="hljs-number">5</span>
+<span class="hljs-keyword">if</span> var_1 &gt; <span class="hljs-number">1</span> and var_1 &lt; <span
+                                                                                class="hljs-number">10</span>:
+<span class="hljs-title function_">print</span>(var_1 + <span class="hljs-number">1</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Маємо (відео
+                                                                            8):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/T32ffcoKGr8pHTKoRpGlBnTNBJ97m93y?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/T32ffcoKGr8pHTKoRpGlBnTNBJ97m93y?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 8</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <ul>
+                                                                            <li style="text-align: justify;">Операторor
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>(або)</strong></span>
+                                                                              дає змогу виконувати код, якщо виконується
+                                                                              принаймні одна з умов:
+                                                                            </li>
+                                                                          </ul>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">var_1 = <span
+                                                                              class="hljs-number">15</span>
+<span class="hljs-keyword">if</span> var_1 &lt; <span class="hljs-number">1</span> <span class="hljs-keyword">or</span> var_1 &gt; <span
+                                                                                class="hljs-number">10</span>:
+<span class="hljs-built_in">print</span>(var_1 + <span class="hljs-number">5</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Отримаємо
+                                                                            (відео 9):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/-evZkFRdm7g38ei6XWI0kR37_pZm3wgV?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/-evZkFRdm7g38ei6XWI0kR37_pZm3wgV?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 9</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Як бачимо,
+                                                                            вищевказані оператори працюють протилежним
+                                                                            чином, тому запис <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>"and or"</strong></span>
+                                                                            є некоректним. Між ними обов'язково має
+                                                                            вказуватись умова.</p>
+                                                                          <ul>
+                                                                            <li style="text-align: justify;">Оператор
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>not&nbsp;</strong></span>(<strong>заперечення</strong>)змінює
+                                                                              умову на протилежну (відео 10):
+                                                                            </li>
+                                                                          </ul>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/tC8TbQm-Nl_IIXrODvxr6O97gn6KwtpM?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/tC8TbQm-Nl_IIXrODvxr6O97gn6KwtpM?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 10</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <ul>
+                                                                            <li style="text-align: justify;">Оператор
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>in</strong></span>
+                                                                              (<strong>в</strong>) використовується для
+                                                                              перевірки присутності елемента в масиві
+                                                                              даних:
+                                                                            </li>
+                                                                          </ul>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">list_1 = [<span
+                                                                              class="hljs-number">1</span>, <span
+                                                                              class="hljs-number">2</span>, <span
+                                                                              class="hljs-number">4</span>, <span
+                                                                              class="hljs-number">6</span>, <span
+                                                                              class="hljs-number">8</span>, <span
+                                                                              class="hljs-number">12</span>]
+var_1 = <span class="hljs-number">6</span>
+<span class="hljs-keyword">if</span> var_1 <span class="hljs-keyword">in</span> list_1:
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Really, list_1 contains the variable var_1"</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Отримаємо
+                                                                            (відео 11):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/9NiYsqWI7LeSpr1ByV8MXm-mvQ_XF0NO?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/9NiYsqWI7LeSpr1ByV8MXm-mvQ_XF0NO?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 11</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <ul>
+                                                                            <li style="text-align: justify;">Оператор
+                                                                              <span
+                                                                                  style="color: rgb(147, 101, 184);"><strong>is</strong></span>
+                                                                              (<strong>є</strong>) використовується для
+                                                                              перевірки істинності твердження:
+                                                                            </li>
+                                                                          </ul>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">var_1 = <span
+                                                                              class="hljs-number">1</span>
+<span class="hljs-keyword">if</span> <span class="hljs-built_in">type</span>(var_1) <span class="hljs-keyword">is</span> <span
+                                                                                class="hljs-built_in">int</span>:
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"Really, var_1 is integer"</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Результат
+                                                                            (відео 12):</p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/CENWO5uVn5zkNkZQ-v7aDWI-t6o08wCm?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/CENWO5uVn5zkNkZQ-v7aDWI-t6o08wCm?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 12</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <h3 style="text-align: justify;" id="h-H3_4">
+                                                                            <span style="color: rgb(147, 101, 184);">Розробка «Quiz»</span>
+                                                                          </h3>
+                                                                          <p style="text-align: justify;"><strong>Ознайомившись
+                                                                            із матеріалом, закріпимо його на практиці
+                                                                            створивши власний трек (мал. 1).</strong>
+                                                                          </p>
+                                                                          <p style="text-align: center;"><span
+                                                                              class="fr-img-caption back-process fr-fic fr-dii"
+                                                                              style="width: 676px;"><span
+                                                                              class="fr-img-wrap"><div
+                                                                              class="img-block"><img
+                                                                              src="./Арифметичні операції __ Урок 8_files/image13.jpg"
+                                                                              alt="YXHXDkiRcdqUmj4Xt8i8iXKezt1WWU9p"
+                                                                              class="back-process fr-fic fr-dii"
+                                                                              id="img2"></div><span class="fr-inner">Малюнок 1</span></span></span>
+                                                                          </p>
+                                                                          <p style="text-align: justify;">Спочатку
+                                                                            створимо змінні для запитань і
+                                                                            відповідей:</p>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">question_1 = <span
+                                                                              class="hljs-string">"I have 4 legs and a tail. I am very smart. I like to play with you.
+             When I see a cat, I say "</span>Woof, woo<span class="hljs-string">f" I am…."</span>
+question_2 = <span class="hljs-string">"I am a pet. I am soft and furry. I like to sleep and drink milk.
+             I do not like mice and dogs. I say "</span>Meow, meow<span class="hljs-string">". I am…."</span>
+question_3 = <span class="hljs-string">"I am a big farm animal. I can be black, white or brown.
+             I like to eat green grass. I give milk. I can say "</span>Moo, moo<span
+                                                                                class="hljs-string">". I am…."</span>
+question_4 = <span class="hljs-string">"I have four legs and a tail. I have no teeth. I can swim
+             and dive underwater. I carry my house around with me. I am a…"</span>
+question_5 = <span class="hljs-string">"I live in the woods. I'm very big and furry. I have a big nose,
+             a little tail and four legs. I like to eat fish and berries. I am a…"</span>
+answer_1 = <span class="hljs-string">"dog"</span>
+answer_2 = <span class="hljs-string">"cat"</span>
+answer_3 = <span class="hljs-string">"cow"</span>
+answer_4 = <span class="hljs-string">"turtle"</span>
+answer_5 = <span class="hljs-string">"bear"</span></pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Тепер
+                                                                            лишається виводити питання на екран і, якщо
+                                                                            користувач вводить правильну відповідь, вона
+                                                                            йому зараховується. Тому створимо змінні, у
+                                                                            яких буде знаходитися відповідь користувача
+                                                                            і зберігатися його результат. Також
+                                                                            пропишемо умови:</p>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">question_1 = <span
+                                                                              class="hljs-string">"I have 4 legs and a tail. I am very smart. I like to play with you.
+             When I see a cat, I say "</span>Woof, woo<span class="hljs-string">f" I am…."</span>
+question_2 = <span class="hljs-string">"I am a pet. I am soft and furry. I like to sleep and drink milk.
+             I do not like mice and dogs. I say "</span>Meow, meow<span class="hljs-string">". I am…."</span>
+question_3 = <span class="hljs-string">"I am a big farm animal. I can be black, white or brown.
+             I like to eat green grass. I give milk. I can say "</span>Moo, moo<span
+                                                                                class="hljs-string">". I am…."</span>
+question_4 = <span class="hljs-string">"I have four legs and a tail. I have no teeth. I can swim
+             and dive underwater. I carry my house around with me. I am a…"</span>
+question_5 = <span class="hljs-string">"I live in the woods. I'm very big and furry. I have a big nose,
+             a little tail and four legs. I like to eat fish and berries. I am a…"</span>
+answer_1 = <span class="hljs-string">"dog"</span>
+answer_2 = <span class="hljs-string">"cat"</span>
+answer_3 = <span class="hljs-string">"cow"</span>
+answer_4 = <span class="hljs-string">"turtle"</span>
+answer_5 = <span class="hljs-string">"bear"</span>
+result = <span class="hljs-number">0</span>
+<span class="hljs-built_in">print</span>(question_1)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer == answer_1:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)
+<span class="hljs-built_in">print</span>(question_2)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer == answer_2:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)
+<span class="hljs-built_in">print</span>(question_3)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer == answer_3:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)
+<span class="hljs-built_in">print</span>(question_4)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer == answer_4:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)
+<span class="hljs-built_in">print</span>(question_5)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer == answer_5:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Рядок <span
+                                                                              style="color: rgb(147, 101, 184);"><strong>"result+=1"</strong></span>
+                                                                            реалізує додавання до попереднього значення
+                                                                            змінної <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>result</strong></span>
+                                                                            числа 1. Тобто це те ж саме, що й <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>"result[нове значення]=result[попереднє значення]+1"</strong></span>.
+                                                                            Аналогічно можна використовувати всі інші
+                                                                            арифметичні оператори.</p>
+                                                                          <p style="text-align: justify;">Залишається
+                                                                            вивести результат, щоби користувач знав
+                                                                            кількість правильних відповідей. Додамо:</p>
+                                                                          <div class="pre-wrapper">
+                                                                            <pre class="language-python hljs"
+                                                                                 translate="no"><span
+                                                                                class="hljs-built_in">print</span>(<span
+                                                                                class="hljs-string">"Congratulations, you have typed "</span>, result, <span
+                                                                                class="hljs-string">" correct answers"</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;">Але правильна
+                                                                            відповідь може бути введена з використанням
+                                                                            великих літер, та наш тест її не зарахує.
+                                                                            Тому приведемо відповідь користувача до
+                                                                            нижнього регістру, скориставшись методом
+                                                                            <span
+                                                                                style="color: rgb(147, 101, 184);"><strong>lower()</strong></span>:
+                                                                          </p>
+                                                                          <div class="pre-wrapper"><pre
+                                                                              class="language-python hljs"
+                                                                              translate="no">question_1 = <span
+                                                                              class="hljs-string">"I have 4 legs and a tail. I am very smart.I like to play with you.
+             When I see a cat, I say "</span>Woof, woo<span class="hljs-string">f" I am…."</span>
+question_2 = <span class="hljs-string">"I am a pet. I am soft and furry. I like to sleep and drink milk.
+             I do not like mice and dogs. I say "</span>Meow, meow<span class="hljs-string">". I am…."</span>
+question_3 = <span class="hljs-string">"I am a big farm animal. I can be black, white or brown.
+             I like to eat green grass. I give milk. I can say "</span>Moo, moo<span
+                                                                                class="hljs-string">". I am…."</span>
+question_4 = <span class="hljs-string">"I have four legs and a tail. I have no teeth. I can swim
+             and dive underwater. I carry my house around with me. I am a…"</span>
+question_5 = <span class="hljs-string">"I live in the woods. I'm very big and furry. I have a big nose,
+             a little tail and four legs. I like to eat fish and berries. I am a…"</span>
+answer_1 = <span class="hljs-string">"dog"</span>
+answer_2 = <span class="hljs-string">"cat"</span>
+answer_3 = <span class="hljs-string">"cow"</span>
+answer_4 = <span class="hljs-string">"turtle"</span>
+answer_5 = <span class="hljs-string">"bear"</span>
+result = <span class="hljs-number">0</span>
+<span class="hljs-built_in">print</span>(question_1)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer.lower() == answer_1:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)
+<span class="hljs-built_in">print</span>(question_2)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer.lower() == answer_2:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)
+<span class="hljs-built_in">print</span>(question_3)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer.lower() == answer_3:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)
+<span class="hljs-built_in">print</span>(question_4)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer.lower() == answer_4:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)
+<span class="hljs-built_in">print</span>(question_5)
+user_answer = <span class="hljs-built_in">input</span>()
+<span class="hljs-keyword">if</span> user_answer.lower() == answer_5:
+result+=<span class="hljs-number">1</span>
+<span class="hljs-built_in">print</span>(<span class="hljs-string">"The answer is correct"</span>)
+<span
+    class="hljs-built_in">print</span>(<span class="hljs-string">"Congratulations, you have typed "</span>, result, <span
+                                                                                class="hljs-string">" correct answers"</span>)</pre>
+                                                                            <a class="clipboard"
+                                                                               title="Copy to clipboard"><img
+                                                                                class="clipboard-icon"
+                                                                                src="./Арифметичні операції __ Урок 8_files/copy-svgrepo-com.svg"></a>
+                                                                          </div>
+                                                                          <p style="text-align: justify;"><strong>Трек
+                                                                            готовий, отже, час по ньому пройти (відео
+                                                                            13):</strong></p>
+                                                                          <span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><video
+                                                                              class="fr-draggable" controls=""
+                                                                              src="https://fsx1.itstep.org/api/v1/files/VULJCtQ7xDzOQN7fgs9p0eegYfGfVw5E?inline"
+                                                                              poster="https://fsx1.itstep.org/api/v1/files/VULJCtQ7xDzOQN7fgs9p0eegYfGfVw5E?inline=&amp;f=webp"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable"><span
+                                                                              class="fr-video fr-deletable fr-rv fr-fvc fr-dvb fr-draggable">Your browser does not support HTML5 video.</span></span></span></span></span></span></span></span></span></span></span></span></span></video></span>
+                                                                          <div>
+                                                                            <div>
+                                                                              <div>
+                                                                                <div>
+                                                                                  <div>
+                                                                                    <div>
+                                                                                      <div>
+                                                                                        <div>
+                                                                                          <div>
+                                                                                            <div>
+                                                                                              <div>
+                                                                                                <div>
+                                                                                                  <div>
+                                                                                                    <div>
+                                                                                                      <div>
+                                                                                                        <div>
+                                                                                                          <div>
+                                                                                                            <div>
+                                                                                                              <div>
+                                                                                                                <p style="text-align: center;">
+                                                                                                                  <span
+                                                                                                                      style="color: rgb(209, 213, 216); font-size: 14px;">Відео 13</span>
+                                                                                                                </p>
+                                                                                                              </div>
+                                                                                                            </div>
+                                                                                                          </div>
+                                                                                                        </div>
+                                                                                                      </div>
+                                                                                                    </div>
+                                                                                                  </div>
+                                                                                                </div>
+                                                                                              </div>
+                                                                                            </div>
+                                                                                          </div>
+                                                                                        </div>
+                                                                                      </div>
+                                                                                    </div>
+                                                                                  </div>
+                                                                                </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                                                          <p style="text-align: justify;"><strong>Сьогодні
+                                                                            ми освоїли арифметичні, умовні й логічні
+                                                                            операції, попрацювали з конструкцією <span
+                                                                                style="color: rgb(147, 101, 184);">if</span>.
+                                                                            Уже відчули силу нових
+                                                                            можливостей?&nbsp;</strong></p>
+                                                                          <p style="text-align: justify;"><strong>А на
+                                                                            наступних заняттях ці можливості
+                                                                            виростуть.</strong></p>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!--<script type="text/javascript" id="www-widgetapi-script" src="./Арифметичні операції __ Урок 8_files/www-widgetapi.js"-->
+<!--        async=""></script>-->
+<!--<script src="./Арифметичні операції __ Урок 8_files/iframe_api"></script>-->
+<!--<script src="./Арифметичні операції __ Урок 8_files/jquery-3.3.1.min.js"></script>-->
+<!--<script src="./Арифметичні операції __ Урок 8_files/script.js"></script>-->
+
+
+</body>
+</html>
